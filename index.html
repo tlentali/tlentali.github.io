@@ -36,6 +36,38 @@
 			<ol>
 				<li>We use data to predict a purchase in a foreseeable futur. It allow us to dispatch a list of eligible items in parcel drop off points or public lockers. So the client or the courier can get it as soon as the command as been made.</li>
 				<li>It is important for us to minimize the hardness of the dispatch rider. To do so we use operation reseach and optimization tools to create the smartest way to deliver items in the most optimal style in real time.</li>
+			
+			
+			<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+       #map {
+        width: 100%;
+        height: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <h3>My Google Maps Demo</h3>
+    <div id="map"></div>
+    <script>
+      function initMap() {
+        var mapDiv = document.getElementById('map');
+        var map = new google.maps.Map(mapDiv, {
+            center: {lat: 44.540, lng: -78.546},
+            zoom: 8
+        });
+      }
+    </script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    </script>
+  </body>
+</html>
+			
+			
+			
 			</ol>
 		</div>
 	</section>
