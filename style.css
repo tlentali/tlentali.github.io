@@ -1,7 +1,9 @@
 #content {
-position:absolute;
-margin: 0 auto;
+width: 700px;
 color: #333;
+margin: 0 auto;
+padding-bottom: 100px;
+padding-top: 100px;
 font-family: Georgia, sans-serif;
 }
 form {
