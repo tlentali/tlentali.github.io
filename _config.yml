@@ -14,3 +14,4 @@ include:
   - PULL_REQUEST_TEMPLATE.md
   - intro.md
   - blog/london.md
+  - blog/python.html
