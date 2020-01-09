@@ -13,26 +13,24 @@
   </head>
   <body>
     <div class="reveal">
-      <div class="slides"><section  data-markdown><script type="text/template"># 💳 * 30📆 = 😍
+      <div class="slides"><section  data-markdown><script type="text/template"># 28 * 💳
 
-<p class="fragment" data-fragment-index="1">1 month using the <b>Revolut</b> card once a day </br>
-➔ </br>
-1 new <b>engaged</b> Revolut customer  
-</p>
+<h3 class="fragment" data-fragment-index="1">=</br>
+1 new long term <b>engaged</b> Revolut customer  
+</h3>
 </script></section><section  data-markdown><script type="text/template">
 # Engaged ?
-<p class="fragment" data-fragment-index="1">
-Churn probability doesn't change during the first two months for any number of churn days treshold.
-</p>
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 >An **engaged** customer is an active user  
 >having done **outside directed transaction**  
 >on the **last two months**.
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section data-markdown><script type="text/template">
+<img src="misc/survival.png" width="90%">
+</script></section></section><section  data-markdown><script type="text/template">
 # Beat the churn !
 <p class="fragment" data-fragment-index="1">A model to detect churners</p>
-<p class="fragment" data-fragment-index="2">and which allows us to take actions against it</p>
-</script></section><section  data-markdown><script type="text/template">
+<p class="fragment" data-fragment-index="2">which allows us to take actions against it</p>
+</script></section><section ><section data-markdown><script type="text/template">
 ## Business actionnable features
 </br>
 </br>
@@ -41,16 +39,28 @@ Churn probability doesn't change during the first two months for any number of c
 |----------------:|:------------------:|
 | `card_payment`  | <p class="fragment" data-fragment-index="1">✅</p>                  |
 | `device_brand`  | <p class="fragment" data-fragment-index="2">❎</p>                  |
-
-</script></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="misc/rev_tree.png" -->
+</script></section><section data-markdown><script type="text/template">
+<img src="misc/correl_matrix.png" width="90%">
+</script></section></section><section  data-markdown><script type="text/template"><!-- .slide: data-background="misc/rev_tree.png" -->
 # Model
-</script></section><section  data-markdown><script type="text/template">
+</script></section><section ><section data-markdown><script type="text/template">
 ## Simple, transparent and robust : Decision Tree
 
 <p class="fragment" data-fragment-index="1">Actual feature treshold value (not scaled)</p>
 <p class="fragment" data-fragment-index="2">Explainable for both the global model and the user scale decision</p>
 <p class="fragment" data-fragment-index="3">&#8771;80% accuracy</p>
 <h3 class="fragment" data-fragment-index="4">Full control given to marketing teams</h3>
+</script></section><section data-markdown><script type="text/template">
+- Over sampling using SMOTE
+- Feature importance :  
+<img src="misc/feature_importance.png" width="90%">
+</script></section></section><section  data-markdown><script type="text/template">
+# Test
+</script></section><section  data-markdown><script type="text/template">
+# Next step
+
+- go deeper into survival analysis (compare survival function between different cohorts)
+- behavior in addition of transactionnal actions
 </script></section></div>
     </div>
 
