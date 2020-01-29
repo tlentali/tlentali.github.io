@@ -107,8 +107,9 @@ Elle peut être achetée dans le commerce ou réalisée soi-même.
 | Glucose | 22g |
 | Sucre glace | 361g |
 
-Mélanger dans un saladier les blancs d’oeuf et le glucose liquide. Y ajouter petit à petit les ¾ du sucre glace jusqu’à obtenir une préparation compacte.
-Travailler cette préparation sur une table, où vous aurez saupoudré du sucre glace, en la chauffant et malaxant avec vos mains. Si la pâte est trop collante, ajoutez petit à petit le sucre glace restant jusqu’à obtenir une texture agréable.
+Mélanger dans un saladier les blancs d’oeuf et le glucose liquide.  
+Y ajouter petit à petit les ¾ du sucre glace jusqu’à obtenir une préparation compacte.  
+Travailler cette préparation sur une table, où vous aurez saupoudré du sucre glace, en la chauffant et malaxant avec vos mains.   Si la pâte est trop collante, ajoutez petit à petit le sucre glace restant jusqu’à obtenir une texture agréable.  
 Si la pâte est trop sèche ou difficile à travailler, ajoutez y un tout petit peu de matière grasse végétale (Végétaline étaler sur vos mains)
 
 ### A base de guimauve
@@ -119,8 +120,10 @@ Si la pâte est trop sèche ou difficile à travailler, ajoutez y un tout petit 
 | Eau | 4g |
 | Sucre glace | 241g |
 
-Mettre dans un saladier les guimauves et l’eau. Mettre au micro-onde entre 15 et 30 secondes, le temps que les marshmallow gonflent et fondent.
-Rajoutez le sucre glace petit à petit en pétrissant et malaxant jusqu’à obtenir une belle boule lisse. Il n’est pas obligatoire de rajouter tout le sucre glace, arrêtez-vous lorsque vous êtes satisfait de votre pâte.
+Mettre dans un saladier les guimauves et l’eau.  
+Mettre au micro-onde entre 15 et 30 secondes, le temps que les marshmallow gonflent et fondent.  
+Rajoutez le sucre glace petit à petit en pétrissant et malaxant jusqu’à obtenir une belle boule lisse.  
+Il n’est pas obligatoire de rajouter tout le sucre glace, arrêtez-vous lorsque vous êtes satisfait de votre pâte.
 
 ## Colorer sa pâte à sucre
 3 raisons principales pour cela :
@@ -209,7 +212,7 @@ Il est très généralement vendu avec une vingtaine de formes différentes.
 
 # Décoration biscuits <a name="biscuits"/>
 
-Pour créer des biscuits uniques diversifiés : utiliser  les emporte-pièces et les réglettes lettres pour inscrire un petit mot.  
+Pour créer des biscuits uniques diversifiés : utiliser les emporte-pièces et les réglettes lettres pour inscrire un petit mot.  
 Astuce : pour conserver au maximum l’impression de vos lettres, ne pas hésiter à placer votre biscuit découpé au congélateur 5 / 10 min avant d’appuyer dessus avec la réglette, puis encore 5 min au congélateur juste avant la cuisson. 
 
 ## Pour la décoration 
