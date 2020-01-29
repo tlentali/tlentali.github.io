@@ -3,8 +3,6 @@
 </p>
 <br />
 
-
-##### Sommaire 
 - [Les colorants](#headers)  
 - [La Pâte à sucre](#sucre)  
 - [Décoration biscuits](#biscuits)   
@@ -104,7 +102,7 @@ Elle peut être achetée dans le commerce ou réalisée soi-même.
 ### A base de blancs d’œufs
 
 |||
-|--------------|-----|
+|--------------|----:|
 | Blanc d’oeuf | 37g |
 | Glucose | 22g |
 | Sucre glace | 361g |
@@ -116,7 +114,7 @@ Si la pâte est trop sèche ou difficile à travailler, ajoutez y un tout petit 
 ### A base de guimauve
 
 |||
-|--------------|-----|
+|--------------|----:|
 | Guimauve | 121g |
 | Eau | 4g |
 | Sucre glace | 241g |
