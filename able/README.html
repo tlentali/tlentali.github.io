@@ -1,0 +1,433 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Docs &mdash; able 0.1 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Module foo" href="code.html" />
+    <link rel="prev" title="Welcome to able’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> able
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#what-is-a-b-testing">What Is A/B Testing?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#before-launching-a-b-test">Before launching A/B test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#sample-size">Sample size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#duration">Duration</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#after-launching-a-b-test">After launching A/B test</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#chi-2-does-the-rate-of-success-differ-across-two-groups"><strong>Chi 2</strong> : Does the rate of success differ across two groups?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#two-sample-t-test-does-the-average-value-differ-across-two-groups"><strong>Two-Sample T-Test</strong> : Does the average value differ across two groups?</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#install">Install</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#launch-the-demo-notebook">Launch the demo notebook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#id1">Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#distribution">Distribution</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#confidence-intervals">Confidence intervals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#vocabulary">Vocabulary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#large-sample">Large sample:</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="code.html">Module foo</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">able</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Docs</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/README.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="docs">
+<h1>Docs<a class="headerlink" href="#docs" title="Permalink to this headline">¶</a></h1>
+<dl class="simple">
+<dt>&lt;h1 align=”center”;</dt><dd><p>font-family: Georgia, sans-serif;
+text-decoration: none;
+background: #ffbdfb;
+padding: 3px 6px;
+color: #000;
+font-size: 28px;&gt;
+<span class="raw-html-m2r"><a href="#"><img src="./misc/logo_able.png" /></a></span>&lt;/h1&gt;</p>
+</dd>
+</dl>
+<p align="center">
+  <a href="#"><img src="./misc/test_ab.jpg" /></a>
+</p><p align="center">
+  AB testing in python
+</p><div class="section" id="what-is-a-b-testing">
+<h2>What Is A/B Testing?<a class="headerlink" href="#what-is-a-b-testing" title="Permalink to this headline">¶</a></h2>
+<p>A/B testing is a method of comparing two versions of a webpage or app against each other to determine which one performs better.</p>
+</div>
+</div>
+<div class="section" id="before-launching-a-b-test">
+<h1>Before launching A/B test<a class="headerlink" href="#before-launching-a-b-test" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="sample-size">
+<h2>Sample size<a class="headerlink" href="#sample-size" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">able</span>
+
+
+<span class="n">ab_test</span> <span class="o">=</span> <span class="n">able</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="n">conversion_rate</span><span class="o">=</span><span class="mf">0.2</span><span class="p">,</span>
+                      <span class="n">min_detectable_effect</span><span class="o">=</span><span class="mf">0.02</span><span class="p">)</span>
+<span class="n">ab_test</span><span class="o">.</span><span class="n">get_size</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="duration">
+<h2>Duration<a class="headerlink" href="#duration" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_duration</span><span class="p">(</span><span class="n">avg_daily_total_visitor</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="after-launching-a-b-test">
+<h1>After launching A/B test<a class="headerlink" href="#after-launching-a-b-test" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="chi-2-does-the-rate-of-success-differ-across-two-groups">
+<h2><strong>Chi 2</strong> : Does the rate of success differ across two groups?<a class="headerlink" href="#chi-2-does-the-rate-of-success-differ-across-two-groups" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">chi2_test</span>
+
+<span class="n">test</span> <span class="o">=</span> <span class="n">chi2_test</span><span class="o">.</span><span class="n">chi2Test</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="n">test</span><span class="o">.</span><span class="n">result</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="two-sample-t-test-does-the-average-value-differ-across-two-groups">
+<h2><strong>Two-Sample T-Test</strong> : Does the average value differ across two groups?<a class="headerlink" href="#two-sample-t-test-does-the-average-value-differ-across-two-groups" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div></div></blockquote>
+</div>
+</div>
+<div class="section" id="install">
+<h1>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install git+https://github.com/tlentali/able
+</pre></div>
+</div>
+<p>To get the last update:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ pip install --upgrade --force-reinstall git+https://github.com/tlentali/able
+</pre></div>
+</div>
+</div>
+<div class="section" id="launch-the-demo-notebook">
+<h1>Launch the demo notebook<a class="headerlink" href="#launch-the-demo-notebook" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>$ jupyter lab
+</pre></div>
+</div>
+</div>
+<div class="section" id="id1">
+<h1>Docs<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>[<a class="reference external" href="https://www.kaggle.com/tammyrotem/ab-tests-with-python">A/B tests with python</a>]</p></li>
+<li><p>[<a class="reference external" href="https://www.evanmiller.org/ab-testing/sample-size.html">Evan Miller sample size calculator</a>]</p></li>
+<li><p>[<a class="reference external" href="https://www.abtasty.com/sample-size-calculator/">AB Tasty sample size calculator</a>]</p></li>
+<li><p>[<a class="reference external" href="https://www.abtasty.com/blog/how-long-run-ab-test/">AB Tasty article</a>]</p></li>
+<li><p>[<a class="reference external" href="https://thenextweb.com/dd/2015/07/24/marketing-the-tnw-way-2-deep-dive-on-ab-testing/">Structure test ab : deep dive on ab testing</a>]</p></li>
+<li><p>[<a class="reference external" href="https://towardsdatascience.com/the-math-behind-a-b-testing-with-example-code-part-1-of-2-7be752e1d06f">The math behind A/B testing</a>]</p></li>
+<li><p>[<a class="reference external" href="https://github.com/mnguyenngo/ab-framework/blob/master/src/stats.py">Code for the math behind A/B testing</a>]</p></li>
+<li><p>[<a class="reference external" href="https://github.com/kuldeepnpatel/Chi-Square-Test-of-Independence/blob/master/Chi-Square%20Test%20of%20Independence.ipynb">Chi 2</a>]</p></li>
+<li><p>[<a class="reference external" href="https://www.evanmiller.org/ab-testing/chi-squared.html#">Does the average value differ across two groups?</a>]</p></li>
+</ul>
+<div class="section" id="distribution">
+<h2>Distribution<a class="headerlink" href="#distribution" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="http://databits.io/bits/fbmx-binomial-distribution">binomial distribution</a></p></li>
+</ul>
+</div>
+<div class="section" id="confidence-intervals">
+<h2>Confidence intervals<a class="headerlink" href="#confidence-intervals" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p><a class="reference external" href="https://seeing-theory.brown.edu/frequentist-inference/index.html#section2">Seeing theory</a></p></li>
+<li><p><a class="reference external" href="https://www.med.uottawa.ca/sim/data/Study_Design_Power_e.html">Study design power e</a></p></li>
+<li><p><a class="reference external" href="https://stackoverflow.com/questions/13404468/t-test-in-pandas">T-test in Pandas</a></p></li>
+</ul>
+<p><strong>Stop test before reaching the sample size</strong><span class="raw-html-m2r"><br></span>
+As we don’t stop a test as soon as it become <a class="reference external" href="http://www.evanmiller.org/how-not-to-run-an-ab-test.html">significant</a>, we have two technics to do it correctly :</p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.evanmiller.org/sequential-ab-testing.html">Simple Sequential A/B Testing</a></p></li>
+<li><p><a class="reference external" href="http://www.evanmiller.org/bayesian-ab-testing.html">Formulas for Bayesian A/B Testing</a></p></li>
+</ul>
+</div>
+<div class="section" id="vocabulary">
+<h2>Vocabulary<a class="headerlink" href="#vocabulary" title="Permalink to this headline">¶</a></h2>
+<p>Assuming there is no underlying difference between A and B, how often will we see a difference like we do in the data just by chance?
+The answer to that question is called the significance level, and “statistically significant results” mean that the significance level is low, e.g. 5% or 1%</p>
+<p>N = sample size<span class="raw-html-m2r"><br></span>
+X = success<span class="raw-html-m2r"><br></span>
+$H_{0}$ =</p>
+<ul class="simple">
+<li><p>Null hypothesis</p></li>
+<li><p>$p<em>{exp} - p</em>{cont} = 0$</p></li>
+</ul>
+<p>$H_{A}$ =</p>
+<ul class="simple">
+<li><p>alternative hypothesis</p></li>
+<li><p>$p<em>{exp} - p</em>{cont} &lt;&gt; 0$</p></li>
+</ul>
+<p>The goal is to have a $P(p_{exp}-p{cont} | H_0)$ small enough
+we reject null if p&lt;0.05 ($p&lt;alpha$)</p>
+<p>$alpha$ =</p>
+<ul class="simple">
+<li><p>probability of falsely concluding there was a difference</p></li>
+<li><p>P(reject null | null true)</p></li>
+<li><p>conventionally set at .05</p></li>
+<li><p>false positives</p></li>
+<li><p>Type I errors</p></li>
+</ul>
+<p>$beta$ =</p>
+<ul class="simple">
+<li><p>power</p></li>
+<li><p>propability of failing to reject the null when the null was in fact false</p></li>
+<li><p>P(fail to reject | null false)</p></li>
+</ul>
+<p>$1-beta$ =</p>
+<ul class="simple">
+<li><p>sensitivity or</p></li>
+<li><p>power of the experiment</p></li>
+<li><p>you often want 80%</p></li>
+</ul>
+<p>d_{min} =</p>
+<p>Small sample:</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>null true</p></th>
+<th class="head"><p>null false</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>reject null</p></td>
+<td><p>alpha low</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>fail to reject</p></td>
+<td></td>
+<td><p>beta high</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>alpha is low : unlikely to launch a bad experiment</p></li>
+<li><p>beta is high : likely to launch an experiement that actually have a difference you care about</p></li>
+</ul>
+</div>
+<div class="section" id="large-sample">
+<h2>Large sample:<a class="headerlink" href="#large-sample" title="Permalink to this headline">¶</a></h2>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 33%" />
+<col style="width: 33%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"></th>
+<th class="head"><p>null true</p></th>
+<th class="head"><p>null false</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>reject null</p></td>
+<td><p>alpha same</p></td>
+<td></td>
+</tr>
+<tr class="row-odd"><td><p>fail to reject</p></td>
+<td></td>
+<td><p>beta lower</p></td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li><p>distribution get tighter</p></li>
+<li><p>alpha doesn’t change</p></li>
+<li><p>unlikley to fall in the range of failing to reject the null</p></li>
+<li><p>more likely to reject the null and conclude there was a difference</p></li>
+</ul>
+<p>What is statistical power?</p>
+<p>The power of any test of statistical significance is defined as the probability that it will reject a false null hypothesis. Statistical power is inversely related to beta or the probability of making a Type II error. In short, power = 1 – β.</p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="code.html" class="btn btn-neutral float-right" title="Module foo" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to able’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2020, tlentali
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
