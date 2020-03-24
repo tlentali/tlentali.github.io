@@ -1,0 +1,20 @@
+API reference
+=============
+
+Module leSample
+---------------
+
+.. autoclass:: leab.leSample.leSample
+   :members:
+
+Module leSuccess
+----------------
+
+.. autoclass:: leab.leSuccess.leSuccess
+   :members:
+
+Module leMean
+-------------
+
+.. autoclass:: leab.leMean.leMean
+   :members:

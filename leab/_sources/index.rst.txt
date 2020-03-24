@@ -1,0 +1,24 @@
+.. image:: _static/logo.svg
+   :height: 100px
+   :align: center
+
+|
+
+Introduction
+============
+
+``Le AB`` is a Python library for AB test analysis.
+
+Get ready to make a few decision.
+
+
+Contents
+========
+
+.. toctree::
+   :maxdepth: 2
+
+   content/install
+   content/api
+   content/user-guide
+   License <https://github.com/tlentali/leab/blob/master/LICENSE>
