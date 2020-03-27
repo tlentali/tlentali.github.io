@@ -3,7 +3,7 @@ Installation
 
 ``Le AB`` is intended to work with Python 3.6 or above.
 
-Installation can be done by using ``pip``:
+Installation can be done by using ``pip`` :
 
 .. code-block:: bash
 

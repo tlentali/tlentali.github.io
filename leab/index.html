@@ -43,17 +43,30 @@
   <meta name="theme-color" content="#3f51b5">
   <script src="_static/javascripts/modernizr.js"></script>
   
+  <script>
+      window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'UA-34150465-7', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
   
   
     <title>Introduction &#8212; le AB 0.1.0 documentation</title>
     <link rel="stylesheet" href="_static/material.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="_static/target.ico"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Installation" href="content/install.html" />
@@ -263,8 +276,25 @@
 </div>
 
 <h1 id="index--page-root">Introduction<a class="headerlink" href="#index--page-root" title="Permalink to this headline">¶</a></h1>
-<p><code class="docutils literal notranslate"><span class="pre">Le</span> <span class="pre">AB</span></code> is a Python library for AB test analysis.</p>
-<p>Get ready to make a few decision.</p>
+<div class="line-block">
+<div class="line"><strong>Le AB</strong> is a Python library for AB testing analysis made with 💙 from Bordeaux 🍷.</div>
+<div class="line"><br/></div>
+<div class="line">Get ready to take a decision !</div>
+<div class="line"><br/></div>
+<div class="line">AB testing has never been more popular, especially on Internet based companies.</div>
+<div class="line">Even if each test is unique, some questions seem to be asked again and again :</div>
+</div>
+<ul class="simple">
+<li><p>when is my test going to be statistically significant ?</p></li>
+<li><p>is A more successful than B ?</p></li>
+<li><p>does A generate more than B ?</p></li>
+</ul>
+<div class="line-block">
+<div class="line">Strong statistical knowledge are required to handle it from start to end correctly.</div>
+<div class="line">To answer those questions in a simple and robust way, we built <strong>le AB</strong>.</div>
+<div class="line">Lets Python do AB testing analysis !</div>
+<div class="line"><br/></div>
+</div>
 
 
 <h1 id="contents">Contents<a class="headerlink" href="#contents" title="Permalink to this headline">¶</a></h1>

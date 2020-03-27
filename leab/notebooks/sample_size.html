@@ -43,17 +43,30 @@
   <meta name="theme-color" content="#3f51b5">
   <script src="../_static/javascripts/modernizr.js"></script>
   
+  <script>
+      window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'UA-34150465-7', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
   
   
     <title>Le Sample &#8212; le AB 0.1.0 documentation</title>
     <link rel="stylesheet" href="../_static/material.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../_static/target.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Le Success" href="success_comparaison.html" />
@@ -476,14 +489,18 @@ div.rendered_html tbody tr:hover {
 </style>
 
 <h1 id="notebooks-sample-size--page-root">Le Sample<a class="headerlink" href="#notebooks-sample-size--page-root" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">This tuto shows you how to get the number of sample needed by variation to reach a statistical significant result.</div>
+<div class="line">First, let’s import the right tools :</div>
+</div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">'../leab/'</span><span class="p">))</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">'../../../leab/'</span><span class="p">))</span>
 </pre></div>
 </div>
 </div>
@@ -491,18 +508,23 @@ div.rendered_html tbody tr:hover {
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
-<span></span><span class="kn">from</span> <span class="nn">leSample</span> <span class="kn">import</span> <span class="n">leSample</span> <span class="k">as</span> <span class="n">ls</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">before</span>
 </pre></div>
 </div>
+</div>
+<div class="line-block">
+<div class="line">As we want to know the sample needed, we stand <strong>before</strong> launching the AB test.</div>
+<div class="line">Then, from the before import, we create a leSample instance that we call <code class="docutils literal notranslate"><span class="pre">ab_test</span></code>.</div>
+<div class="line">In this example we want to get a volume of sample needed if we expect a minimum detectable effect of 2% on a baseline conversion rate of 20% :</div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
-<span></span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">ls</span><span class="p">(</span><span class="n">conversion_rate</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
-             <span class="n">min_detectable_effect</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">before</span><span class="o">.</span><span class="n">leSample</span><span class="p">(</span><span class="n">conversion_rate</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+                          <span class="n">min_detectable_effect</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">ab_test</span><span class="o">.</span><span class="n">get_size</span><span class="p">()</span>
 </pre></div>
 </div>
@@ -516,11 +538,15 @@ div.rendered_html tbody tr:hover {
 6347
 </pre></div></div>
 </div>
+<div class="line-block">
+<div class="line">So the result is <code class="docutils literal notranslate"><span class="pre">6347</span></code> visits per variation (for the A variation and the B variation).</div>
+<div class="line">If we know the trafic expected on this test, we can ends up with a approximate number of days needed to run the test :</div>
+</div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_duration</span><span class="p">(</span><span class="n">avg_daily_total_visitor</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -534,6 +560,7 @@ div.rendered_html tbody tr:hover {
 13
 </pre></div></div>
 </div>
+<p>You will need <code class="docutils literal notranslate"><span class="pre">13</span></code> days to run the test.</p>
 
 
 

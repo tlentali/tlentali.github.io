@@ -43,17 +43,30 @@
   <meta name="theme-color" content="#3f51b5">
   <script src="../_static/javascripts/modernizr.js"></script>
   
+  <script>
+      window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'UA-34150465-7', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
   
   
     <title>API reference &#8212; le AB 0.1.0 documentation</title>
     <link rel="stylesheet" href="../_static/material.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../_static/target.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="User guide" href="user-guide.html" />
@@ -291,29 +304,53 @@
 
 <h2 id="module-lesample">Module leSample<a class="headerlink" href="#module-lesample" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="leab.leSample.leSample">
-<em class="property">class </em><code class="sig-prename descclassname">leab.leSample.</code><code class="sig-name descname">leSample</code><span class="sig-paren">(</span><em class="sig-param">conversion_rate: float</em>, <em class="sig-param">min_detectable_effect: float</em>, <em class="sig-param">significance_level: float = 0.05</em>, <em class="sig-param">statistical_power: float = 0.8</em>, <em class="sig-param">absolute: bool = True</em><span class="sig-paren">)</span><a class="headerlink" href="#leab.leSample.leSample" title="Permalink to this definition">¶</a></dt>
-<dd><dl class="method">
-<dt id="leab.leSample.leSample.absolute_or_relative">
-<code class="sig-name descname">absolute_or_relative</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="headerlink" href="#leab.leSample.leSample.absolute_or_relative" title="Permalink to this definition">¶</a></dt>
+<dt id="leab.before.leSample.leSample">
+<em class="property">class </em><code class="sig-prename descclassname">leab.before.leSample.</code><code class="sig-name descname">leSample</code><span class="sig-paren">(</span><em class="sig-param">conversion_rate: float</em>, <em class="sig-param">min_detectable_effect: float</em>, <em class="sig-param">significance_level: float = 0.05</em>, <em class="sig-param">statistical_power: float = 0.8</em>, <em class="sig-param">absolute: bool = True</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/leab/before/leSample.html#leSample"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>Build leSample object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>conversion_rate</strong> (<em>float</em>) – baseline conversion rate.</p></li>
+<li><p><strong>min_detectable_effect</strong> (<em>float</em>) – minimum detectable effect.</p></li>
+<li><p><strong>significance_level</strong> (<em>float</em>) – alpha, percent of the time a difference will be detected, assuming one does NOT exist.</p></li>
+<li><p><strong>statistical_power</strong> (<em>float</em>) – 1-beta, percent of the time the minimum effect size will be detected, assuming it exists.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">before</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">before</span><span class="o">.</span><span class="n">leSample</span><span class="p">(</span><span class="n">conversion_rate</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">min_detectable_effect</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_size</span><span class="p">()</span>
+<span class="go">6347</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_duration</span><span class="p">(</span><span class="n">avg_daily_total_visitor</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
+<span class="go">13</span>
+</pre></div>
+</div>
+<dl class="method">
+<dt id="leab.before.leSample.leSample.absolute_or_relative">
+<code class="sig-name descname">absolute_or_relative</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → None<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.absolute_or_relative"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.absolute_or_relative" title="Permalink to this definition">¶</a></dt>
 <dd><p>Set up the min_detectable_effect absolute value or relative to conversion_rate.</p>
 </dd></dl>
 <dl class="method">
-<dt id="leab.leSample.leSample.compute_z_score">
-<em class="property">static </em><code class="sig-name descname">compute_z_score</code><span class="sig-paren">(</span><em class="sig-param">alpha: float</em><span class="sig-paren">)</span> → float<a class="headerlink" href="#leab.leSample.leSample.compute_z_score" title="Permalink to this definition">¶</a></dt>
+<dt id="leab.before.leSample.leSample.compute_z_score">
+<em class="property">static </em><code class="sig-name descname">compute_z_score</code><span class="sig-paren">(</span><em class="sig-param">alpha: float</em><span class="sig-paren">)</span> → float<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.compute_z_score"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.compute_z_score" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute z score from alpha value.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><p><strong>alpha</strong> (<em>float</em>) – required alpha value (alpha should already fit the required test).</p>
 </dd>
 <dt class="field-even">Returns</dt>
-<dd class="field-even"><p>The z-score.</p>
+<dd class="field-even"><p>Z-score.</p>
 </dd>
 </dl>
 </dd></dl>
 <dl class="method">
-<dt id="leab.leSample.leSample.get_duration">
-<code class="sig-name descname">get_duration</code><span class="sig-paren">(</span><em class="sig-param">avg_daily_total_visitor: int</em>, <em class="sig-param">nb_split: int = 2</em><span class="sig-paren">)</span> → int<a class="headerlink" href="#leab.leSample.leSample.get_duration" title="Permalink to this definition">¶</a></dt>
+<dt id="leab.before.leSample.leSample.get_duration">
+<code class="sig-name descname">get_duration</code><span class="sig-paren">(</span><em class="sig-param">avg_daily_total_visitor: int</em>, <em class="sig-param">nb_split: int = 2</em><span class="sig-paren">)</span> → int<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.get_duration"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.get_duration" title="Permalink to this definition">¶</a></dt>
 <dd><p>Compute the estimate duration in day needed to get significance on the test.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -328,12 +365,12 @@
 </dl>
 </dd></dl>
 <dl class="method">
-<dt id="leab.leSample.leSample.get_size">
-<code class="sig-name descname">get_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="headerlink" href="#leab.leSample.leSample.get_size" title="Permalink to this definition">¶</a></dt>
-<dd><p>Calls all methods used to get the size needed to get significance on the test.</p>
+<dt id="leab.before.leSample.leSample.get_size">
+<code class="sig-name descname">get_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.get_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.get_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls all methods used to get the size needed per group to get significance on the test.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
-<dd class="field-odd"><p>the minimum sample size required per group according to metric denominator.</p>
+<dd class="field-odd"><p>Minimum sample size required per group according to metric denominator.</p>
 </dd>
 </dl>
 </dd></dl>
@@ -342,16 +379,75 @@
 
 <h2 id="module-lesuccess">Module leSuccess<a class="headerlink" href="#module-lesuccess" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="leab.leSuccess.leSuccess">
-<em class="property">class </em><code class="sig-prename descclassname">leab.leSuccess.</code><code class="sig-name descname">leSuccess</code><span class="sig-paren">(</span><em class="sig-param">sample_A: pandas.core.frame.DataFrame</em>, <em class="sig-param">sample_B: pandas.core.frame.DataFrame</em>, <em class="sig-param">confidence_level: float = 0.95</em><span class="sig-paren">)</span><a class="headerlink" href="#leab.leSuccess.leSuccess" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="leab.after.leSuccess.leSuccess">
+<em class="property">class </em><code class="sig-prename descclassname">leab.after.leSuccess.</code><code class="sig-name descname">leSuccess</code><span class="sig-paren">(</span><em class="sig-param">sample_A: pandas.core.frame.DataFrame</em>, <em class="sig-param">sample_B: pandas.core.frame.DataFrame</em>, <em class="sig-param">confidence_level: float = 0.95</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/leab/after/leSuccess.html#leSuccess"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.after.leSuccess.leSuccess" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">leab.after.leSuccess.Chi2Sample</span></code></p>
+<p>Build leSuccess object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sample_A</strong> (<em>pd.DataFrame</em>) – A sample data.</p></li>
+<li><p><strong>sample_B</strong> (<em>pd.DataFrame</em>) – B sample data.</p></li>
+<li><p><strong>confidence_level</strong> (<em>float</em>) – desired confidence level, default : 95%.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">leDataset</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">after</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">leDataset</span><span class="o">.</span><span class="n">SampleLeSuccess</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">leSuccess</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">A</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">data</span><span class="o">.</span><span class="n">B</span><span class="p">,</span>
+<span class="gp">... </span>                          <span class="n">confidence_level</span><span class="o">=</span><span class="mf">0.95</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">sample_A</span><span class="o">.</span><span class="n">confidence_interval</span>
+
+<span class="go">[8.526343659939133, 22.13718821096384]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">p_value</span>
+
+<span class="go">0.25870176105718934</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_verdict</span><span class="p">()</span>
+
+<span class="go">'No significant difference'</span>
+</pre></div>
+</div>
+</dd></dl>
 
 
 <h2 id="module-lemean">Module leMean<a class="headerlink" href="#module-lemean" title="Permalink to this headline">¶</a></h2>
 <dl class="class">
-<dt id="leab.leMean.leMean">
-<em class="property">class </em><code class="sig-prename descclassname">leab.leMean.</code><code class="sig-name descname">leMean</code><span class="sig-paren">(</span><em class="sig-param">sample_A: pandas.core.frame.DataFrame</em>, <em class="sig-param">sample_B: pandas.core.frame.DataFrame</em>, <em class="sig-param">confidence_level: float = 0.95</em><span class="sig-paren">)</span><a class="headerlink" href="#leab.leMean.leMean" title="Permalink to this definition">¶</a></dt>
-<dd></dd></dl>
+<dt id="leab.after.leMean.leMean">
+<em class="property">class </em><code class="sig-prename descclassname">leab.after.leMean.</code><code class="sig-name descname">leMean</code><span class="sig-paren">(</span><em class="sig-param">sample_A: pandas.core.frame.DataFrame</em>, <em class="sig-param">sample_B: pandas.core.frame.DataFrame</em>, <em class="sig-param">confidence_level: float = 0.95</em><span class="sig-paren">)</span><a class="reference internal" href="../_modules/leab/after/leMean.html#leMean"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.after.leMean.leMean" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">leab.after.leMean.TTestSample</span></code></p>
+<p>Build leMean object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>sample_A</strong> (<em>pd.DataFrame</em>) – A sample data.</p></li>
+<li><p><strong>sample_B</strong> (<em>pd.DataFrame</em>) – B sample data.</p></li>
+<li><p><strong>confidence_level</strong> (<em>float</em>) – desired confidence level, default : 95%.</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">after</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">leDataset</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="n">leDataset</span><span class="o">.</span><span class="n">SampleLeMean</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">leMean</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">B</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">sample_A</span><span class="o">.</span><span class="n">confidence_interval</span>
+
+<span class="go">[34.75214007684581, 81.59785992315418]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_verdict</span><span class="p">()</span>
+
+<span class="go">'Sample A mean is greater'</span>
+</pre></div>
+</div>
+</dd></dl>
 
 
 

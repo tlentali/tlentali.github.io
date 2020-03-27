@@ -43,17 +43,30 @@
   <meta name="theme-color" content="#3f51b5">
   <script src="../_static/javascripts/modernizr.js"></script>
   
+  <script>
+      window.ga = window.ga || function () {
+          (ga.q = ga.q || []).push(arguments)
+      };
+      ga.l = +new Date;
+      ga('create', 'UA-34150465-7', 'auto');
+      ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
   
   
     <title>Le Mean &#8212; le AB 0.1.0 documentation</title>
     <link rel="stylesheet" href="../_static/material.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <link rel="shortcut icon" href="../_static/target.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Le Success" href="success_comparaison.html" />
@@ -475,42 +488,118 @@ div.rendered_html tbody tr:hover {
 </style>
 
 <h1 id="notebooks-mean-comparaison--page-root">Le Mean<a class="headerlink" href="#notebooks-mean-comparaison--page-root" title="Permalink to this headline">¶</a></h1>
+<div class="line-block">
+<div class="line">Here we will compare means of value obtained from A versus B.</div>
+<div class="line">First, lets import some data from <code class="docutils literal notranslate"><span class="pre">leDataset</span></code> :</div>
+</div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="kn">import</span> <span class="nn">sys</span>
 <span class="kn">import</span> <span class="nn">os</span>
-<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">'../leab/'</span><span class="p">))</span>
-
-<span class="kn">from</span> <span class="nn">leMean</span> <span class="kn">import</span> <span class="n">leMean</span>
-<span class="kn">import</span> <span class="nn">leDataset</span>
+<span class="n">sys</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">os</span><span class="o">.</span><span class="n">path</span><span class="o">.</span><span class="n">abspath</span><span class="p">(</span><span class="s1">'../../../leab/'</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">after</span>
+<span class="kn">from</span> <span class="nn">leab</span> <span class="kn">import</span> <span class="n">leDataset</span>
 
 <span class="n">data</span> <span class="o">=</span> <span class="n">leDataset</span><span class="o">.</span><span class="n">SampleLeMean</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
-<div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[8]:
-</pre></div>
-</div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
-<span></span><span class="n">test</span> <span class="o">=</span> <span class="n">leMean</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">B</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
+<p><code class="docutils literal notranslate"><span class="pre">data</span></code> is composed by <code class="docutils literal notranslate"><span class="pre">data.A</span></code> and <code class="docutils literal notranslate"><span class="pre">data.B</span></code></p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
-<span></span><span class="n">test</span><span class="o">.</span><span class="n">sample_A</span><span class="o">.</span><span class="n">confidence_interval</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">data</span><span class="o">.</span><span class="n">A</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
 <div class="nboutput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[9]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[3]:
+</pre></div>
+</div>
+<div class="output_area rendered_html docutils container">
+<div>
+<style scoped="">
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+<thead>
+<tr style="text-align: right;">
+<th></th>
+<th>values</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>0</th>
+<td>64.2</td>
+</tr>
+<tr>
+<th>1</th>
+<td>28.4</td>
+</tr>
+<tr>
+<th>2</th>
+<td>85.3</td>
+</tr>
+<tr>
+<th>3</th>
+<td>83.1</td>
+</tr>
+<tr>
+<th>4</th>
+<td>13.4</td>
+</tr>
+</tbody>
+</table>
+</div></div>
+</div>
+<div class="line-block">
+<div class="line">We build a <code class="docutils literal notranslate"><span class="pre">leMean</span></code> instance from <code class="docutils literal notranslate"><span class="pre">after</span></code> tools that we call <code class="docutils literal notranslate"><span class="pre">ab_test</span></code>.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">leMean</span></code> is in <code class="docutils literal notranslate"><span class="pre">after</span></code> tools as we compute it after getting results so after the AB test run.</div>
+</div>
+<div class="nbinput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[4]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">after</span><span class="o">.</span><span class="n">leMean</span><span class="p">(</span><span class="n">data</span><span class="o">.</span><span class="n">A</span><span class="p">,</span> <span class="n">data</span><span class="o">.</span><span class="n">B</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="nbinput docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
+</pre></div>
+</div>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ab_test</span><span class="o">.</span><span class="n">sample_A</span><span class="o">.</span><span class="n">confidence_interval</span>
+</pre></div>
+</div>
+</div>
+<div class="nboutput nblast docutils container">
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[5]:
 </pre></div>
 </div>
 <div class="output_area docutils container">
@@ -518,12 +607,13 @@ div.rendered_html tbody tr:hover {
 [34.75214007684581, 81.59785992315418]
 </pre></div></div>
 </div>
+<p>We have acces to interstings info such as the wanted sample <em>confidence interval</em> or the <em>p value</em> for example etc</p>
 <div class="nbinput docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[10]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[6]:
 </pre></div>
 </div>
-<div class="input_area highlight-python notranslate"><div class="highlight"><pre>
-<span></span><span class="n">test</span><span class="o">.</span><span class="n">get_verdict</span><span class="p">()</span>
+<div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
+<span></span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_verdict</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -534,6 +624,10 @@ div.rendered_html tbody tr:hover {
 <div class="highlight"><pre>
 Sample A mean is greater
 </pre></div></div>
+</div>
+<div class="line-block">
+<div class="line">At this default value of confidence level (95% by default), we can conclude that A mean is greater than B mean.</div>
+<div class="line"><code class="docutils literal notranslate"><span class="pre">A</span></code> varaition wins !</div>
 </div>
 
 
