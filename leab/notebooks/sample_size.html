@@ -54,7 +54,7 @@
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   
   
-    <title>Le Sample &#8212; le AB 0.1.2 documentation</title>
+    <title>Le Sample &#8212; le AB 0.1.4 documentation</title>
     <link rel="stylesheet" href="../_static/material.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -103,11 +103,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../index.html" title="le AB 0.1.2 documentation"
+        <a href="../index.html" title="le AB 0.1.4 documentation"
            class="md-header-nav__button md-logo">
           
               <img src="../_static/target.png" height="26"
-                   alt="le AB 0.1.2 documentation logo">
+                   alt="le AB 0.1.4 documentation logo">
           
         </a>
       </div>
@@ -116,7 +116,7 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">le AB v0.1.2</span>
+          <span class="md-header-nav__topic">le AB v0.1.4</span>
           <span class="md-header-nav__topic"> Le Sample </span>
         </div>
       </div>
@@ -179,7 +179,7 @@
   <nav class="md-tabs" data-md-component="tabs">
     <div class="md-tabs__inner md-grid">
       <ul class="md-tabs__list">
-          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">le AB 0.1.2 documentation</a></li>
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">le AB 0.1.4 documentation</a></li>
           <li class="md-tabs__item"><a href="../content/user-guide.html" class="md-tabs__link">User guide</a></li>
       </ul>
     </div>
@@ -192,13 +192,13 @@
               <div class="md-sidebar__inner">
                 <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../index.html" title="le AB 0.1.2 documentation" class="md-nav__button md-logo">
+    <a href="../index.html" title="le AB 0.1.4 documentation" class="md-nav__button md-logo">
       
         <img src="../_static/target.png" alt=" logo" width="48" height="48">
       
     </a>
     <a href="../index.html"
-       title="le AB 0.1.2 documentation">le AB v0.1.2</a>
+       title="le AB 0.1.4 documentation">le AB v0.1.4</a>
   </label>
     <div class="md-nav__source">
       <a href="https://github.com/tlentali/leab/" title="Go to repository" class="md-source" data-md-source="github">
@@ -490,11 +490,11 @@ div.rendered_html tbody tr:hover {
 
 <h1 id="notebooks-sample-size--page-root">Le Sample<a class="headerlink" href="#notebooks-sample-size--page-root" title="Permalink to this headline">¶</a></h1>
 <div class="line-block">
-<div class="line">This tuto shows you how to get the number of sample needed by variation to reach a statistical significant result.</div>
+<div class="line">This tuto shows you how to get the number of sample needed per variation to reach a statistical significant result.</div>
 <div class="line">First, let’s import the right tools :</div>
 </div>
 <div class="nbinput nblast docutils container">
-<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[1]:
+<div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[ ]:
 </pre></div>
 </div>
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
@@ -504,8 +504,8 @@ div.rendered_html tbody tr:hover {
 </div>
 <div class="line-block">
 <div class="line">As we want to know the sample needed, we stand <strong>before</strong> launching the AB test.</div>
-<div class="line">Then, from the before import, we create a leSample instance that we call <code class="docutils literal notranslate"><span class="pre">ab_test</span></code>.</div>
-<div class="line">In this example we want to get a volume of sample needed if we expect a minimum detectable effect of 2% on a baseline conversion rate of 20% :</div>
+<div class="line">Then, from the <code class="docutils literal notranslate"><span class="pre">before</span></code> import, we create a <code class="docutils literal notranslate"><span class="pre">leSample</span></code> instance that we call <code class="docutils literal notranslate"><span class="pre">ab_test</span></code>.</div>
+<div class="line">In this example we want to get a volume of sample per variation needed if we expect a minimum detectable effect of 2% on a baseline conversion rate of 20% :</div>
 </div>
 <div class="nbinput docutils container">
 <div class="prompt highlight-none notranslate"><div class="highlight"><pre><span></span>[2]:
@@ -514,7 +514,7 @@ div.rendered_html tbody tr:hover {
 <div class="input_area highlight-ipython3 notranslate"><div class="highlight"><pre>
 <span></span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">before</span><span class="o">.</span><span class="n">leSample</span><span class="p">(</span><span class="n">conversion_rate</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
                           <span class="n">min_detectable_effect</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="n">ab_test</span><span class="o">.</span><span class="n">get_size</span><span class="p">()</span>
+<span class="n">ab_test</span><span class="o">.</span><span class="n">get_size_per_variation</span><span class="p">()</span>
 </pre></div>
 </div>
 </div>
@@ -528,7 +528,7 @@ div.rendered_html tbody tr:hover {
 </pre></div></div>
 </div>
 <div class="line-block">
-<div class="line">So the result is <code class="docutils literal notranslate"><span class="pre">6347</span></code> visits per variation (for the A variation and the B variation).</div>
+<div class="line">So the result is <code class="docutils literal notranslate"><span class="pre">6347</span></code> visits per variation (<code class="docutils literal notranslate"><span class="pre">6347</span></code> for the A variation and <code class="docutils literal notranslate"><span class="pre">6347</span></code> more for the B variation).</div>
 <div class="line">If we know the trafic expected on this test, we can ends up with a approximate number of days needed to run the test :</div>
 </div>
 <div class="nbinput docutils container">

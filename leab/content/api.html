@@ -54,7 +54,7 @@
   <script async src='https://www.google-analytics.com/analytics.js'></script>
   
   
-    <title>API reference &#8212; le AB 0.1.2 documentation</title>
+    <title>API reference &#8212; le AB 0.1.4 documentation</title>
     <link rel="stylesheet" href="../_static/material.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
@@ -103,11 +103,11 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex navheader">
       <div class="md-flex__cell md-flex__cell--shrink">
-        <a href="../index.html" title="le AB 0.1.2 documentation"
+        <a href="../index.html" title="le AB 0.1.4 documentation"
            class="md-header-nav__button md-logo">
           
               <img src="../_static/target.png" height="26"
-                   alt="le AB 0.1.2 documentation logo">
+                   alt="le AB 0.1.4 documentation logo">
           
         </a>
       </div>
@@ -116,7 +116,7 @@
       </div>
       <div class="md-flex__cell md-flex__cell--stretch">
         <div class="md-flex__ellipsis md-header-nav__title" data-md-component="title">
-          <span class="md-header-nav__topic">le AB v0.1.2</span>
+          <span class="md-header-nav__topic">le AB v0.1.4</span>
           <span class="md-header-nav__topic"> API reference </span>
         </div>
       </div>
@@ -179,7 +179,7 @@
   <nav class="md-tabs" data-md-component="tabs">
     <div class="md-tabs__inner md-grid">
       <ul class="md-tabs__list">
-          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">le AB 0.1.2 documentation</a></li>
+          <li class="md-tabs__item"><a href="../index.html" class="md-tabs__link">le AB 0.1.4 documentation</a></li>
       </ul>
     </div>
   </nav>
@@ -191,13 +191,13 @@
               <div class="md-sidebar__inner">
                 <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="__drawer">
-    <a href="../index.html" title="le AB 0.1.2 documentation" class="md-nav__button md-logo">
+    <a href="../index.html" title="le AB 0.1.4 documentation" class="md-nav__button md-logo">
       
         <img src="../_static/target.png" alt=" logo" width="48" height="48">
       
     </a>
     <a href="../index.html"
-       title="le AB 0.1.2 documentation">le AB v0.1.2</a>
+       title="le AB 0.1.4 documentation">le AB v0.1.4</a>
   </label>
     <div class="md-nav__source">
       <a href="https://github.com/tlentali/leab/" title="Go to repository" class="md-source" data-md-source="github">
@@ -323,7 +323,7 @@
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span> <span class="o">=</span> <span class="n">before</span><span class="o">.</span><span class="n">leSample</span><span class="p">(</span><span class="n">conversion_rate</span><span class="o">=</span><span class="mi">20</span><span class="p">,</span>
 <span class="gp">... </span>                          <span class="n">min_detectable_effect</span><span class="o">=</span><span class="mi">2</span><span class="p">)</span>
-<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_size</span><span class="p">()</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_size_per_variation</span><span class="p">()</span>
 <span class="go">6347</span>
 
 <span class="gp">&gt;&gt;&gt; </span><span class="n">ab_test</span><span class="o">.</span><span class="n">get_duration</span><span class="p">(</span><span class="n">avg_daily_total_visitor</span><span class="o">=</span><span class="mi">1000</span><span class="p">)</span>
@@ -365,12 +365,22 @@
 </dl>
 </dd></dl>
 <dl class="method">
-<dt id="leab.before.leSample.leSample.get_size">
-<code class="sig-name descname">get_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.get_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.get_size" title="Permalink to this definition">¶</a></dt>
+<dt id="leab.before.leSample.leSample.get_size_per_variation">
+<code class="sig-name descname">get_size_per_variation</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.get_size_per_variation"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.get_size_per_variation" title="Permalink to this definition">¶</a></dt>
 <dd><p>Calls all methods used to get the size needed per group to get significance on the test.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Returns</dt>
 <dd class="field-odd"><p>Minimum sample size required per group according to metric denominator.</p>
+</dd>
+</dl>
+</dd></dl>
+<dl class="method">
+<dt id="leab.before.leSample.leSample.get_total_size">
+<code class="sig-name descname">get_total_size</code><span class="sig-paren">(</span><span class="sig-paren">)</span> → int<a class="reference internal" href="../_modules/leab/before/leSample.html#leSample.get_total_size"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#leab.before.leSample.leSample.get_total_size" title="Permalink to this definition">¶</a></dt>
+<dd><p>Calls all methods used to get the total size needed to get significance on the test.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Minimum total sample size required according to metric denominator.</p>
 </dd>
 </dl>
 </dd></dl>
