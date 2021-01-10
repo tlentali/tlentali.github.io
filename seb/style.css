@@ -1,11 +1,5 @@
-html, body {
-    height: 100%;
-    margin: 0;
-}
-
-.gif-container {
-  background: url("snitch.gif") center;
-  background-size: cover;
-
-  height: 100%;
+body{
+background-image: 'snitch.gif';
+background-position: center;
+background-size: cover;
 }
