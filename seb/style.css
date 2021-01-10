@@ -1,5 +1,20 @@
-body{
-background-image: 'snitch.gif';
-background-position: center;
-background-size: cover;
+html { 
+  background: 'snitch.gif' repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
 }
+body {
+    height: 100%;
+}
+
+h1 {
+    font-family: 'Spirax', cursive;
+    font-size: 1.8em;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=20)";
+    filter: alpha(opacity=20);
+    opacity: 0.2;
+}
+@tlentali
