@@ -34,9 +34,9 @@ input[type='submit'] {
 }
 
 h1 {
-  font-weight: lighter;
-  font-size: 90px;
-  font-family: "Abril Fatface", cursive;
+  font-weight: Black 900;
+  font-size: 87px;
+  font-family: 'Source Serif Pro', serif;
 }
 
 a {
