@@ -1,4 +1,3 @@
-
 ## EVJG
 
 ### escape game
@@ -7,13 +6,6 @@
 ### shooting photo
 - [ ] TODO trouver photographe / prix  
 - [ ] TODO lister photo booth sur Bordeaux
-
-### strip tease (avec accord total de Virginie)
-
-- [dalhia noir](http://www.ledahlianoir.com/)  
-- adresse : 51, rue François de Sourdis 33000 Bordeaux  
-- lonlat : 44.833200,-0.588190  
-- budget : 39€/pers (sur la base de 10 personnes)  
 
 ### jeux de pistes / geocatching  
 
@@ -38,6 +30,12 @@
 - adresse : 152 Avenue Jean Jaurès, 33600 Pessac, France
 - lonlat : 44.8123867,-0.6152362
 - budget : 48 euro la cible pour 1h + instructeur, 1 à 3 joueurs par cible
+
+### strip tease (avec accord total de Virginie)
+- [dalhia noir](http://www.ledahlianoir.com/)  
+- adresse : 51, rue François de Sourdis 33000 Bordeaux  
+- lonlat : 44.833200,-0.588190  
+- budget : 39€/pers (sur la base de 10 personnes)  
 
 ### initiation au drift
 - [circuit bordeaux merignac](https://www.circuit.bordeaux-merignac.com/)
