@@ -1,3 +1,7 @@
+html{
+  background-color:#231F20;
+}
+
 #content {
   position:absolute; 
   top:0; left:0; right:0; bottom:0;
@@ -23,6 +27,11 @@ p2 {
   line-height: 1.8;
 }
 
+p3 {
+  font-size: 46px;
+  line-height: 1.8;
+}
+
 input {
   font-size: 28px;
   line-height: 1.5;
@@ -35,13 +44,12 @@ input[type='submit'] {
 
 h1 {
   font-weight: Black 900;
-  font-size: 87px;
+  font-size: 50px;
   font-family: 'Source Serif Pro', serif;
 }
 
 a {
   text-decoration: none;
-  background: #ffbdfb;
   padding: 3px 6px;
   color: #000;
 }
@@ -53,4 +61,21 @@ strong {
 a:hover {
   color: #000;
   text-decoration: underline;
+}
+
+.center-screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.shadow_box {
+    box-shadow: 8.0px 16.0px 16.0px hsl(0deg 0% 0% / 0.25);
+}
+
+.roundrect {
+border-radius: 15px;
 }
