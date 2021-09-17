@@ -35,7 +35,6 @@ h1 {
 a {
   text-decoration: none;
   padding: 6px 35px;
-  color: #000;
 }
 
 strong {
@@ -62,4 +61,45 @@ a:hover {
 
 .roundrect {
 border-radius: 15px;
+}
+
+/* relevant styles */
+.img__wrap {
+  position: relative;
+  height: 400px;
+  width: 400px;
+}
+
+.img__description_layer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(35, 31, 32, 0.8);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+  visibility: visible;
+  opacity: 1;
+}
+
+.img__description {
+  transition: .2s;
+  transform: translateY(1em);
+  font-size: 20px;
+  font-family:'Cousine', monospace;
+}
+
+.img__wrap:hover .img__description {
+  transform: translateY(0);
 }
