@@ -3,7 +3,7 @@ html{
 }
 
 #content {
-  position:absolute; 
+  position:absolute;
   top:0; left:0; right:0; bottom:0;
   padding-left:5px;
   width: 700px;
@@ -17,24 +17,8 @@ form {
   text-align: center;
 }
 
-p {
-  font-size: 24px;
-  line-height: 1.2;
-}
-
-p2 {
-  font-size: 26px;
-  line-height: 1.8;
-}
-
-p3 {
-  font-size: 46px;
-  line-height: 1.8;
-}
-
 input {
   font-size: 28px;
-  line-height: 1.5;
   padding: 5px 15px;
 }
 
@@ -50,7 +34,7 @@ h1 {
 
 a {
   text-decoration: none;
-  padding: 3px 6px;
+  padding: 6px 35px;
   color: #000;
 }
 
