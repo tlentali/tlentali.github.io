@@ -60,15 +60,15 @@ Ca serait pas mal de ne pas repeter l'histoire.
 
 Bon pour le "consacre sa vie aux pauvres" là on comprend : tu bosses pour Cdiscount ! Très bien.  
 Mais en guise de vieillards... j'ai l'impression que ca pointe doucement vers Jonathan cette histoire.  
-Et en ce qui concerne les enfants abandonnés... s'il y a des parents au bout du rouleau ce soir, à priori c'est l'occasion de laisser vos enfants dans la salle en partant, ils seront recuperés et elevé par Virginie.
+Et en ce qui concerne les enfants abandonnés... s'il y a des parents au bout du rouleau ce soir, à priori c'est l'occasion de laisser vos enfants dans la salle en partant, ils seront recuperés et elevés par Virginie.
 
 > Elles est béatifiée en 1985, par Jean Paul II.  
 
-Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 etait surement une sorte d'amelioration de Jean Paul 1, j'imagine.  
+Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 était surement une version d'amelioration de Jean Paul 1, j'imagine.  
 
 Voilà pour la fameuse histoire du prénom Virginie.  
 
-Et pour cloturer ce discour très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louedec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment Doré !  
+Et pour cloturer ce discour très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louëdec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment Doré !  
 
 https://www.prenoms.com/prenom-garcon/jonathan-1041  
 https://www.prenoms.com/prenom-fille/virginie-6392  
