@@ -16,7 +16,7 @@ Et non pas normand, comme on aurait pu le penser.
 Alors là, dès la premiere phrase, ca à tout de suite capté mon attention !  
 Jonath est clairement un leader naturel, c'est vrai.  
 Meme qu'aujourd'hui c'est un chef au travail.  
-Comme il nous le dit souvant, je le cite: "c'est moi qu'ai la capèt'"  -> ce qui se traduit par : "c'est moi qui possede le chapeau du chef."
+Comme il nous le dit souvant, je le cite: "c'est moi qu'ai la capèt'"  -> ce qui se traduit par : "c'est moi qui possede le chapeau du chef."  
 C'est pour nous rappeler quand ya besoin : c'est qui le partron... (les boys nous font leur "c'est moi" de l'evg)
 
 > Généreux, il tend la main aux personnes qui ont besoin de lui et leur prodigue des conseils sages et mûrement réfléchis. 
@@ -51,22 +51,22 @@ Alors, c'est bien parce que, c'est un discourt, mais on apprend des trucs. Ou pa
 > Le 15 décembre, on fête Virginie Centurione qui vécut à Gêne, au XVIIème siècle.  
 > Noble, mariée contre son gré, elle se fait religieuse à la mort de son mari.  
 
-Alors, juste au cas où c'etait pas clair, Virginie, tu es d'accord avec ce qu'il se passe ici aujourd'hui ?
-Cligne deux non des yeux pour dire non !
+Alors, juste au cas où c'etait pas clair, Virginie, tu es d'accord avec ce qu'il se passe ici aujourd'hui ?  
+Cligne deux fois des yeux pour dire non !  
 Parce qu'en une phrase on a quand meme "mariée contre son gré" et "à la mort de son mari".  
 Ca serait pas mal de ne pas repeter l'histoire.
 
 > Elle consacre sa vie aux pauvres, aux vieillards et aux enfants abandonnés.  
 
 Bon pour le "consacre sa vie aux pauvres" là on comprend : tu bosses pour Cdiscount ! Très bien.  
-Mais en guise de vieillards... j'ai l'impression que ca pointe doucement vers Jonathan cette histoire.
+Mais en guise de vieillards... j'ai l'impression que ca pointe doucement vers Jonathan cette histoire.  
 Et en ce qui concerne les enfants abandonnés... s'il y a des parents au bout du rouleau ce soir, à priori c'est l'occasion de laisser vos enfants dans la salle en partant, ils seront recuperés et elevé par Virginie.
 
 > Elles est béatifiée en 1985, par Jean Paul II.  
 
-Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 etait surement une sorte d'amelioration de Jean Paul 1, j'imagine.
+Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 etait surement une sorte d'amelioration de Jean Paul 1, j'imagine.  
 
-Voilà pour la fameuse histoire du prénom Virginie.
+Voilà pour la fameuse histoire du prénom Virginie.  
 
 Et pour cloturer ce discour très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louedec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment Doré !  
 
