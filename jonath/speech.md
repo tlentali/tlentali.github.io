@@ -64,7 +64,7 @@ Et en ce qui concerne les enfants abandonnés... s'il y a des parents au bout du
 
 > Elles est béatifiée en 1985, par Jean Paul II.  
 
-Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 était surement une version d'amelioration de Jean Paul 1, j'imagine.  
+Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 était surement une sorte d'amelioration de Jean Paul 1, j'imagine.  
 
 Voilà pour la fameuse histoire du prénom Virginie.  
 
