@@ -1,6 +1,4 @@
-https://www.prenoms.com/prenom-garcon/jonathan-1041  
-https://www.prenoms.com/prenom-fille/virginie-6392  
-https://www.journaldesfemmes.fr/prenoms/virginie/prenom-6223  
+# Mariage Virgine Doré & Jonathan Louëdec
 
 Pour ecrire ce discours, j'ai simplement commencer par rechercher le prenom Jonathan dans Google.  
 Non pas que je n'etais pas inspiré, mais je me suis dit que ca serait une bonne idée de commencer par là.  
@@ -70,4 +68,8 @@ Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 etait surement un
 
 Voilà pour la fameuse histoire du prénom Virginie.
 
-Et pour cloturer ce discour très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louedec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment doré !  
+Et pour cloturer ce discour très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louedec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment Doré !  
+
+https://www.prenoms.com/prenom-garcon/jonathan-1041  
+https://www.prenoms.com/prenom-fille/virginie-6392  
+https://www.journaldesfemmes.fr/prenoms/virginie/prenom-6223  
