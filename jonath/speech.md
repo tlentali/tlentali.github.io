@@ -46,7 +46,7 @@ Virginie, c'est à toi :
 
 > Bergère en Poitou, patronne de l'actuel village de saint Verge, dans les Deux Sèvres, on ne sait absolument rien sur la vie de cette sainte des premiers siècles du christianisme.
 
-Alors, c'est bien parce que, c'est un discourt, mais on apprend des trucs. Ou pas tellement finalement.
+Alors, c'est bien parce que, c'est un discours, mais on apprend des trucs. Ou pas tellement finalement.
 
 > Le 15 décembre, on fête Virginie Centurione qui vécut à Gêne, au XVIIème siècle.  
 > Noble, mariée contre son gré, elle se fait religieuse à la mort de son mari.  
