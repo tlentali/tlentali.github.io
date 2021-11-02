@@ -1,6 +1,6 @@
 # Mariage Virgine Doré & Jonathan Louëdec
 
-Pour ecrire ce discours, j'ai simplement commencer par rechercher le prenom Jonathan dans Google.  
+Pour ecrire ce discours, j'ai simplement commencé par rechercher le prenom Jonathan dans Google.  
 Non pas que je n'etais pas inspiré, mais je me suis dit que ca serait une bonne idée de commencer par là.  
 Le premier site qui ressort, c'est prenom.com.  
 Et bien, je vais vous lire ce que j'ai vu :
