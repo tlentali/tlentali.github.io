@@ -68,7 +68,7 @@ Bon ben ca c'est quand meme la classe, surtout que Jean Paul 2 était surement u
 
 Voilà pour la fameuse histoire du prénom Virginie.  
 
-Et pour cloturer ce discour très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louëdec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment Doré !  
+Et pour cloturer ce discours très instructif, je dirais simplement qu'aujourd’hui Virginie devient une Louëdec… et je pense que l’on peut dire que de son côté, en épousant Virginie, Jonathan est vraiment Doré.  
 
 https://www.prenoms.com/prenom-garcon/jonathan-1041  
 https://www.prenoms.com/prenom-fille/virginie-6392  
