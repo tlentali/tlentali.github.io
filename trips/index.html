@@ -28,7 +28,7 @@
         function drawGlobe() {
             d3.queue()
                 .defer(d3.json, 'https://gist.githubusercontent.com/mbostock/4090846/raw/d534aba169207548a8a3d670c9c2cc719ff05c47/world-110m.json')
-                .defer(d3.json, 'https://gist.githubusercontent.com/tlentali/110389adc0dc6d31bec2ed7e81f11371/raw/adad1312f9e76cd57ec3f63e057b739685267db5/locations.json')
+                .defer(d3.json, 'https://gist.githubusercontent.com/tlentali/110389adc0dc6d31bec2ed7e81f11371/raw/9446d80051ede2f55a3e6c9319a9b9234dbb10d5/locations.json')
                 .await((error, worldData, locationData) => {
                     svg.selectAll(".segment")
                         .data(topojson.feature(worldData, worldData.objects.countries).features)
