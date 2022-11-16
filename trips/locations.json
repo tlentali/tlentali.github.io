@@ -418,5 +418,9 @@
     {
         "latitude": 29.013,
         "longitude": -13.634
-    }
+    },
+    {
+        "latitude": 35.912761, 
+        "longitude": 14.502071
+    },
 ]
