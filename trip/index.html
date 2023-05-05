@@ -1,6 +1,9 @@
 <head>
   <style> body { margin: 0; } </style>
 
+  <script src="//unpkg.com/d3"></script>
+  <script src="//unpkg.com/d3-dsv"></script>
+
   <script src="//unpkg.com/globe.gl"></script>
   <!--<script src="../../dist/globe.gl.js"></script>-->
 </head>
@@ -9,28 +12,28 @@
   <div id="globeViz"></div>
 
   <script>
+    const weightColor = d3.scaleSequentialSqrt(d3.interpolateYlOrRd)
+      .domain([0, 1e7]);
+
     const world = Globe()
       (document.getElementById('globeViz'))
-      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-dark.jpg')
-      .pointOfView({ altitude: 4 }, 5000)
-      .polygonCapColor(feat => 'rgba(200, 0, 0, 0.6)')
-      .polygonSideColor(() => 'rgba(0, 100, 0, 0.05)')
-      .polygonLabel(({ properties: d }) => `
-          <b>${d.ADMIN} (${d.ISO_A2})</b> <br />
-          Population: <i>${Math.round(+d.POP_EST / 1e4) / 1e2}M</i>
-        `);
+      .globeImageUrl('//unpkg.com/three-globe/example/img/earth-night.jpg')
+      .bumpImageUrl('//unpkg.com/three-globe/example/img/earth-topology.png')
+      .backgroundImageUrl('//unpkg.com/three-globe/example/img/night-sky.png')
+      .hexBinPointWeight('pop')
+      .hexAltitude(d => d.sumWeight * 6e-8)
+      .hexBinResolution(4)
+      .hexTopColor(d => weightColor(d.sumWeight))
+      .hexSideColor(d => weightColor(d.sumWeight))
+      .hexBinMerge(true)
+      .enablePointerInteraction(false); // performance improvement
 
-    // Auto-rotate
+    fetch('datasets/world_population.csv').then(res => res.text())
+      .then(csv => d3.csvParse(csv, ({ lat, lng, pop }) => ({ lat: +lat, lng: +lng, pop: +pop })))
+      .then(data => world.hexBinPointsData(data));
+
+    // Add auto-rotation
     world.controls().autoRotate = true;
-    world.controls().autoRotateSpeed = 1.8;
-
-    fetch('/datasets/ne_110m_admin_0_countries.geojson').then(res => res.json()).then(countries => {
-      world.polygonsData(countries.features.filter(d => d.properties.ISO_A2 !== 'AQ'));
-
-      setTimeout(() => world
-        .polygonsTransitionDuration(4000)
-        .polygonAltitude(feat => Math.max(0.1, Math.sqrt(+feat.properties.POP_EST) * 7e-5))
-      , 3000);
-    });
+    world.controls().autoRotateSpeed = 0.6;
   </script>
 </body>
