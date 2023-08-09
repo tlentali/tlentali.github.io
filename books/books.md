@@ -9,7 +9,7 @@ But, when I finished all the small reads, the problem stay the same : how do I r
 Ok, we need a blend of the **ChatGPT** approche and a little bit of common sense.  
 We need to slalom, we need to temperate : we need to alternte between book size.  
 
-First, the data.
+### First, the data.
 
 I have 21 pending books.  
 There is a sample of our books, with there title and page number :
@@ -47,7 +47,9 @@ books['rank'] = books['pages'].rank(method='first')
 
 ![](misc/books_rank.png)
 
-To finish, we can create a new column `reading_rank` to alternate the ranking as want it :
+### A new hope.
+
+we can create a new column `reading_rank` to alternate the ranking as want it :
 
 ```python
 books.loc[books['rank']>(books['rank'].max()/2), 'reading_rank'] = books[books['rank']>(books['rank'].max()/2)]['pages'].rank(method='first')
