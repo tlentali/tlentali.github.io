@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thomas Lentali</title>
+  <title>Books</title>
   <meta name="description" content="Optimize books reading." />
   <meta name="keywords" content="personal site, maths, technology, programing, portfolio" />
   <link rel="stylesheet" href="../css/reset.css" />
@@ -14,6 +14,7 @@
   
 <body>
 <h3>Books.</h3>
+
 <p>They accumulate slowly, but surely in my home.<br />
 Books that I haven't read of course.<br />
 We need a plan to optimize my reading process.<br />
@@ -22,10 +23,13 @@ However, <strong>ChatGPT</strong> advises us to prioritize short books in order 
 But, when I finished all the small reads, the problem stay the same : how do I read this tone of books ?<br />
 Ok, we need a blend of the <strong>ChatGPT</strong> approche and a little bit of common sense.<br />
 We need to slalom, we need to temperate : we need to alternte between book size.  </p>
+  
 <h3>First, the data.</h3>
+  
 <p>I have 21 pending books.<br />
 There is a sample of our books, with there title and page number :</p>
-<p><table>
+  
+<table>
 <thead>
 <tr>
 <th style="text-align: left;">title</th>
@@ -62,7 +66,8 @@ There is a sample of our books, with there title and page number :</p>
 <td style="text-align: right;">143</td>
 </tr>
 </tbody>
-</table></p>
+</table>
+  
 <p>Let's start by getting the data.</p>
 <p>```python
 import pandas as pd</p>
@@ -75,7 +80,8 @@ books['pages'].sum()/365</code></p>
 We can have a look at the volume of page sorted by books and setting this order in term of volume using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from Pandas.</p>
 <p><code>python
 books['rank'] = books['pages'].rank(method='first')</code></p>
-<p><img alt="" src="misc/books_rank.png" width="500" height="600"/></p>
+<img alt="" src="misc/books_rank.png" width="600" height="300"/>
+  
 <h3>A new hope.</h3>
 <p>we can create a new column <code>reading_rank</code> to alternate the ranking as want it.</p>
 <p><code>python
@@ -84,7 +90,9 @@ books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[boo
 <p>Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html"><code>sort_values</code></a> gives us the final result.</p>
 <p><code>python
 books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></p>
-<p><img alt="" src="misc/books_reranked.png" width="500" height="600"/></p>
+  
+<img alt="" src="misc/books_reranked.png" width="600" height="300"/>
 <p>Let's call it a plan and start reading ;)</p>
+  
 </body>
 </html>
