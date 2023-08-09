@@ -1,12 +1,13 @@
-Books.  
-They accumulate slowly but surely in my home.  
-Books that I havn't read of course.  
+### Books.
+
+They accumulate slowly, but surely in my home.  
+Books that I haven't read of course.  
 We need a plan to optimize my reading process.  
-Nothing on Arxiv about optimized reading book in a special order, nothing on Google...  
-However, ChatGPT advises us to prioritize short books in order to keep a sens of accomplishment.  
+Nothing on **Arxiv** about optimized reading book in a special order, nothing on **Google**...  
+However, **ChatGPT** advises us to prioritize short books in order to keep a sens of accomplishment.  
 But, when I finished all the small reads, the problem stay the same : how do I read this tone of books ?  
-Ok, we need a blend of the chatGPT approche and a little bit of sens of reality.  
-We need to slalom, we need to tempere : we need to altern between book size.  
+Ok, we need a blend of the **ChatGPT** approche and a little bit of common sense.  
+We need to slalom, we need to temperate : we need to alternte between book size.  
 
 First, the data.
 
