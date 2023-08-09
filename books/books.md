@@ -24,7 +24,7 @@ There is a sample of our books, with there title and page number :
 | Regards obliques                              |     128 |
 | Contes et légendes du vieux Bordeaux          |     143 |
 
-Let's start by getting the data :
+Let's start by getting the data.
 
 ```python
 import pandas as pd
@@ -39,7 +39,7 @@ books['pages'].sum()/365
 ```
 
 Around `20` pages a day, seems good to me.  
-We can have a look at the volume of page sorted by books and setting this order in term of volume using [`rank`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html) from Pandas :
+We can have a look at the volume of page sorted by books and setting this order in term of volume using [`rank`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html) from Pandas.
 
 ```python
 books['rank'] = books['pages'].rank(method='first')
@@ -49,14 +49,14 @@ books['rank'] = books['pages'].rank(method='first')
 
 ### A new hope.
 
-we can create a new column `reading_rank` to alternate the ranking as want it :
+we can create a new column `reading_rank` to alternate the ranking as want it.
 
 ```python
 books.loc[books['rank']>(books['rank'].max()/2), 'reading_rank'] = books[books['rank']>(books['rank'].max()/2)]['pages'].rank(method='first')
 books.loc[books['rank']<=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']<=(books['rank'].max()/2)]['pages'].rank(method='first')
 ```
 
-Reordering the list using [`sort_values`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html) gives us the final result :
+Reordering the list using [`sort_values`](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html) gives us the final result.
 
 ```python
 books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']
