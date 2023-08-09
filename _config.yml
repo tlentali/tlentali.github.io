@@ -1,6 +1,6 @@
 plugins:
   - jekyll-relative-links
-markdown: kramdown
+markdown: GFM
 relative_links:
   enabled: true
   collections: true
