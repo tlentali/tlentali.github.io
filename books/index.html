@@ -1,0 +1,44 @@
+<h3>Books.</h3>
+<p>They accumulate slowly, but surely in my home.<br />
+Books that I haven't read of course.<br />
+We need a plan to optimize my reading process.<br />
+Nothing on <strong>Arxiv</strong> about optimized reading book in a special order, nothing on <strong>Google</strong>...<br />
+However, <strong>ChatGPT</strong> advises us to prioritize short books in order to keep a sens of accomplishment.<br />
+But, when I finished all the small reads, the problem stay the same : how do I read this tone of books ?<br />
+Ok, we need a blend of the <strong>ChatGPT</strong> approche and a little bit of common sense.<br />
+We need to slalom, we need to temperate : we need to alternte between book size.  </p>
+<h3>First, the data.</h3>
+<p>I have 21 pending books.<br />
+There is a sample of our books, with there title and page number :</p>
+<p>| title                                         |   pages |
+|:----------------------------------------------|--------:|
+| made to stick                                 |     291 |
+| Fondation                                     |     832 |
+| Autobiographie d'un yogi                      |     775 |
+| Cracking the Coding Interview                 |     706 |
+| Le petit cirque de l'horreur                  |     204 |
+| Regards obliques                              |     128 |
+| Contes et légendes du vieux Bordeaux          |     143 |</p>
+<p>Let's start by getting the data.</p>
+<p>```python
+import pandas as pd</p>
+<p>books = pd.read_csv('waiting_room.csv', index_col='title')
+```</p>
+<p>Now that our data is loaded, we can answer a couple of obvious question like <code>how many page should I read on a daily basisi in order to finish everything ?</code></p>
+<p><code>python
+books['pages'].sum()/365</code></p>
+<p>Around <code>20</code> pages a day, seems good to me.<br />
+We can have a look at the volume of page sorted by books and setting this order in term of volume using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from Pandas.</p>
+<p><code>python
+books['rank'] = books['pages'].rank(method='first')</code></p>
+<p><img alt="" src="misc/books_rank.png" /></p>
+<h3>A new hope.</h3>
+<p>we can create a new column <code>reading_rank</code> to alternate the ranking as want it.</p>
+<p><code>python
+books.loc[books['rank']&gt;(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&gt;(books['rank'].max()/2)]['pages'].rank(method='first')
+books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&lt;=(books['rank'].max()/2)]['pages'].rank(method='first')</code></p>
+<p>Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html"><code>sort_values</code></a> gives us the final result.</p>
+<p><code>python
+books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></p>
+<p><img alt="" src="misc/books_reranked.png" /></p>
+<p>Let's call it a plan and start reading ;)</p>
