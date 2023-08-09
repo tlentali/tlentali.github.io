@@ -1,3 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Thomas Lentali</title>
+  <meta name="description" content="Optimize books reading." />
+  <meta name="keywords" content="personal site, maths, technology, programing, portfolio" />
+  <link rel="stylesheet" href="../css/reset.css" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+
+  
+<body>
 <h3>Books.</h3>
 <p>They accumulate slowly, but surely in my home.<br />
 Books that I haven't read of course.<br />
@@ -42,3 +57,5 @@ books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[boo
 books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></p>
 <p><img alt="" src="misc/books_reranked.png" /></p>
 <p>Let's call it a plan and start reading ;)</p>
+</body>
+</html>
