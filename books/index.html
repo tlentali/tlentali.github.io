@@ -9,10 +9,15 @@
   <meta name="keywords" content="personal site, maths, technology, programing, portfolio" />
   <link rel="stylesheet" href="../css/reset.css" />
   <link rel="stylesheet" href="../css/style.css" />
+  <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/default.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
 </head>
 
   
 <body>
+<div class="container">
 <section id="books" class="about">
 <div>
 <h2 class="title"><strong>Books</strong></h2>
@@ -71,34 +76,36 @@ There is a sample of our books, with there title and page number :
 </table>
   
 Let's start by getting the data.
-```python
-import pandas as pd
-books = pd.read_csv('waiting_room.csv', index_col='title')
-```
+<pre><code class="python">import pandas as pd
+books = pd.read_csv('waiting_room.csv', index_col='title')</code></pre>
+
 Now that our data is loaded, we can answer a couple of obvious question like <code>how many page should I read on a daily basisi in order to finish everything ?
 
-<code>python
-books['pages'].sum()/365</code></p>
+<pre><code class="python">books['pages'].sum()/365</code></pre>
+
 Around <code>20</code> pages a day, seems good to me.<br />
 We can have a look at the volume of page sorted by books and setting this order in term of volume using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from Pandas.
-<code>python
-books['rank'] = books['pages'].rank(method='first')</code>
+<pre><code class="python">books['rank'] = books['pages'].rank(method='first')</code>
+  
 <img alt="" src="misc/books_rank.png" width="600" height="300"/>
 </p>
   
 <h3>A new hope.</h3>
- class="about__p"we can create a new column <code>reading_rank</code> to alternate the ranking as want it.
-<code>python
-books.loc[books['rank']&gt;(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&gt;(books['rank'].max()/2)]['pages'].rank(method='first')
-books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&lt;=(books['rank'].max()/2)]['pages'].rank(method='first')</code>
+  
+<p class="about__p">We can create a new column reading_rank to alternate the ranking as want it.
+
+<pre><code class="python">books.loc[books['rank']&gt;(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&gt;(books['rank'].max()/2)]['pages'].rank(method='first')
+books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&lt;=(books['rank'].max()/2)]['pages'].rank(method='first')</code></pre>
   
 Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html"><code>sort_values</code></a> gives us the final result.
-<code>python
-books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code>
+
+<pre><code class="python">books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></pre>
   
 <img alt="" src="misc/books_reranked.png" width="600" height="300"/>
 Let's call it a plan and start reading ;)
 </p>
-  
+</div>
+</section>
+</div>
 </body>
 </html>
