@@ -25,15 +25,44 @@ We need to slalom, we need to temperate : we need to alternte between book size.
 <h3>First, the data.</h3>
 <p>I have 21 pending books.<br />
 There is a sample of our books, with there title and page number :</p>
-<p>| title                                         |   pages |
-|:----------------------------------------------|--------:|
-| made to stick                                 |     291 |
-| Fondation                                     |     832 |
-| Autobiographie d'un yogi                      |     775 |
-| Cracking the Coding Interview                 |     706 |
-| Le petit cirque de l'horreur                  |     204 |
-| Regards obliques                              |     128 |
-| Contes et légendes du vieux Bordeaux          |     143 |</p>
+<p><table>
+<thead>
+<tr>
+<th style="text-align: left;">title</th>
+<th style="text-align: right;">pages</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">made to stick</td>
+<td style="text-align: right;">291</td>
+</tr>
+<tr>
+<td style="text-align: left;">Fondation</td>
+<td style="text-align: right;">832</td>
+</tr>
+<tr>
+<td style="text-align: left;">Autobiographie d'un yogi</td>
+<td style="text-align: right;">775</td>
+</tr>
+<tr>
+<td style="text-align: left;">Cracking the Coding Interview</td>
+<td style="text-align: right;">706</td>
+</tr>
+<tr>
+<td style="text-align: left;">Le petit cirque de l'horreur</td>
+<td style="text-align: right;">204</td>
+</tr>
+<tr>
+<td style="text-align: left;">Regards obliques</td>
+<td style="text-align: right;">128</td>
+</tr>
+<tr>
+<td style="text-align: left;">Contes et légendes du vieux Bordeaux</td>
+<td style="text-align: right;">143</td>
+</tr>
+</tbody>
+</table></p>
 <p>Let's start by getting the data.</p>
 <p>```python
 import pandas as pd</p>
@@ -46,7 +75,7 @@ books['pages'].sum()/365</code></p>
 We can have a look at the volume of page sorted by books and setting this order in term of volume using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from Pandas.</p>
 <p><code>python
 books['rank'] = books['pages'].rank(method='first')</code></p>
-<p><img alt="" src="misc/books_rank.png" /></p>
+<p><img alt="" src="misc/books_rank.png" width="500" height="600"/></p>
 <h3>A new hope.</h3>
 <p>we can create a new column <code>reading_rank</code> to alternate the ranking as want it.</p>
 <p><code>python
@@ -55,7 +84,7 @@ books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[boo
 <p>Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html"><code>sort_values</code></a> gives us the final result.</p>
 <p><code>python
 books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></p>
-<p><img alt="" src="misc/books_reranked.png" /></p>
+<p><img alt="" src="misc/books_reranked.png" width="500" height="600"/></p>
 <p>Let's call it a plan and start reading ;)</p>
 </body>
 </html>
