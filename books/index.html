@@ -89,7 +89,7 @@ books = pd.read_csv('waiting_room.csv', index_col='title')</code></pre>
           We can have a look at the volume of page sorted by books and setting this order in term of volume using <a
             href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from
           Pandas.</p>
-        <pre><code class="python">books['rank'] = books['pages'].rank(method='first')</code>
+        <pre><code class="python">books['rank'] = books['pages'].rank(method='first')</code></pre>
         <p class="about__p"><img alt="" src="misc/books_rank.png" width="1000" height="500" class="center"/></p>
         <p class="about__p">We can create a new column <strong>reading_rank</strong> to alternate the ranking as want it.</p>
         <pre><code class="python">books.loc[books['rank']&gt;(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&gt;(books['rank'].max()/2)]['pages'].rank(method='first')
