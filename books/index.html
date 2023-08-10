@@ -91,12 +91,10 @@ books = pd.read_csv('waiting_room.csv', index_col='title')</code></pre>
           Pandas.</p>
         <pre><code class="python">books['rank'] = books['pages'].rank(method='first')</code>
 <img alt="" src="misc/books_rank.png" width="1000" height="500" class="center"/>
-  
-<h3>A new hope.</h3>
-<p class="about__p">We can create a new column <strong>reading_rank</strong> to alternate the ranking as want it.</p>
+        <p class="about__p">We can create a new column <strong>reading_rank</strong> to alternate the ranking as want it.</p>
 <pre><code class="python">books.loc[books['rank']&gt;(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&gt;(books['rank'].max()/2)]['pages'].rank(method='first')
 books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&lt;=(books['rank'].max()/2)]['pages'].rank(method='first')</code></pre>
-        <p class="about__p">Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html">sort_values</a> gives us the final result.</p>
+        <p class="about__p">Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html"><strong>sort_values</strong></a> gives us the final result.</p>
         <pre><code class="python">books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></pre>
         <img alt="" src="misc/books_reranked.png" width="1000" height="500" class="center" />
         <p class="about__p">Let's call it a plan and start reading ;)</p>
