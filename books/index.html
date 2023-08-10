@@ -34,7 +34,7 @@ We need to slalom, we need to temperate : we need to alternte between book size.
 <h3>First, the data.</h3>
   
 <p class="about__p">I have 21 pending books.<br />
-There is a sample of our books, with there title and page number :
+There is a sample of our books, with there title and page number :</p>
 
 <p class="about__p">
 <table>
@@ -78,23 +78,23 @@ There is a sample of our books, with there title and page number :
 </p>
 <br />
   
-<p class="about__p">Let's start by getting the data.<br />
+<p class="about__p">Let's start by getting the data.</p>
 <pre><code class="python">import pandas as pd
 books = pd.read_csv('waiting_room.csv', index_col='title')</code></pre><br />
 <p class="about__p">Now that our data is loaded, we can answer a couple of obvious question like <code>how many page should I read on a daily basisi in order to finish everything ?</p>
 <pre><code class="python">books['pages'].sum()/365</code></pre><br />
 <p class="about__p">Around <code>20</code> pages a day, seems good to me.<br />
-We can have a look at the volume of page sorted by books and setting this order in term of volume using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from Pandas.</p><br />
+We can have a look at the volume of page sorted by books and setting this order in term of volume using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rank.html"><code>rank</code></a> from Pandas.</p>
 <pre><code class="python">books['rank'] = books['pages'].rank(method='first')</code><br />
-<img alt="" src="misc/books_rank.png" width="800" height="500" class="center"/><br />
+<img alt="" src="misc/books_rank.png" width="900" height="400" class="center"/>
   
 <h3>A new hope.</h3>
-<p class="about__p">We can create a new column <strong>reading_rank</strong> to alternate the ranking as want it.</p><br />
+<p class="about__p">We can create a new column <strong>reading_rank</strong> to alternate the ranking as want it.</p>
 <pre><code class="python">books.loc[books['rank']&gt;(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&gt;(books['rank'].max()/2)]['pages'].rank(method='first')
-books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&lt;=(books['rank'].max()/2)]['pages'].rank(method='first')</code></pre><br />
-<p class="about__p">Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html">sort_values</a> gives us the final result.</p><br />
-<pre><code class="python">books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></pre><br />
-<img alt="" src="misc/books_reranked.png" width="800" height="500" class="center"/><br />
+books.loc[books['rank']&lt;=(books['rank'].max()/2), 'reading_rank'] = books[books['rank']&lt;=(books['rank'].max()/2)]['pages'].rank(method='first')</code></pre>
+<p class="about__p">Reordering the list using <a href="https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.sort_values.html">sort_values</a> gives us the final result.</p>
+<pre><code class="python">books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']</code></pre>
+<img alt="" src="misc/books_reranked.png" width="900" height="400" class="center"/>
 <p class="about__p">Let's call it a plan and start reading ;)</p>
 </div>
 </section>
