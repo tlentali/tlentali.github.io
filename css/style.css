@@ -107,6 +107,19 @@ body {
   margin-top: 20px;
 }
 
+.article {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 100vh;
+  border-top: 1px solid var(--details);
+}
+
+.article div {
+  margin-top: 40px;
+}
+
 .title {
   font-size: 4rem;
   font-weight: bolder;
