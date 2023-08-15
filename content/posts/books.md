@@ -55,7 +55,11 @@ We can have a look at the volume of page sorted by books and setting this order 
 books['rank'] = books['pages'].rank(method='first')
 ```
 
-<img class="centered" src="/images/blog/books/books_rank.png"/>
+<div align="center" >
+<figure>
+    <img style="box-shadow: none;" src="/images/blog/books/books_rank.png">
+</figure>
+</div>
 
 ### A new hope.
 
