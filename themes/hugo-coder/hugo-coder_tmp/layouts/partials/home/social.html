@@ -1,0 +1,25 @@
+{{ with .Site.Params.social }}
+<ul>
+  {{ range sort . "weight" }}
+    {{ if .image }}
+     <li>
+       <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}" {{ end }} {{ if .target
+        }}target="{{ .target }}" {{ end }} {{ if .type }}type="{{ .type }}" {{ end }}>
+         <img src="{{ .image }}" height="26" width="26" alt="Letterboxd icon">
+         </a>
+       </li>
+
+     {{ else if .icon }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }} {{ if .type }}type="{{ .type }}"{{ end }}>
+          <i class="{{ .icon }}" aria-hidden="true"></i>
+        </a>
+      </li>
+    {{ else }}
+      <li>
+        <a href="{{ .url | safeURL }}" aria-label="{{ .name }}" {{ if .rel }}rel="{{ .rel }}"{{ end }} {{ if .target }}target="{{ .target }}"{{ end }}>{{ .name }}</a>
+      </li>
+    {{ end }}
+  {{ end }}
+</ul>
+{{ end }}
