@@ -1,6 +1,6 @@
 +++
 title = "About"
-draft = true
+draft = false
 +++
 
 I am a Data Scientist at [Betclic](https://www.betclic.fr/) ⛹️, where I specialize in building machine learning detection models mainly for [safer gaming](https://www.joueurs-info-service.fr/) (risk of addiction) 🎰 and [anti-money laundering](https://www.acams.org/en) 💸 behavior. Previously, I worked for [Cdiscount](https://www.cdiscount.com/), a French 🐓 e-commerce company 🛒, focusing mainly on search engine relevancy 🔍.
