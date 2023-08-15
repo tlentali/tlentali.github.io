@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = 'tl'
+title = '@tl'
 
 theme = "hugo-coder"
 defaultcontentlanguage = "en"
@@ -14,6 +14,7 @@ style = "github-dark"
 
 [params]
   author = "🚲"
+  # info=["data scientist", "search engine optimizer", "money laundering fighter", "gambling addiction tracker", "Pringles eater."]
   description = "Thomas' personal website"
   keywords = "blog,developer,personal"
   avatarurl = "images/avatar.jpg"
@@ -53,7 +54,7 @@ style = "github-dark"
   url = "https://stackoverflow.com/users/8479387/tlentali"
 [[params.social]]
   name = "Kaggle"
-  image = "/img/social/kaggle.svg"
+  image = "images/social/kaggle2.svg"
   weight = 3
   url = "https://www.kaggle.com/tlentali"
 [[params.social]]

@@ -54,8 +54,8 @@ We can have a look at the volume of page sorted by books and setting this order 
 ```python
 books['rank'] = books['pages'].rank(method='first')
 ```
-![]("/img/blog/books/books_rank.png")
-<img class="centered" src="../../static/img/blog/books/books_rank.png"/>
+
+<img class="centered" src="/images/blog/books/books_rank.png"/>
 
 ### A new hope.
 
@@ -72,7 +72,7 @@ Reordering the list using [`sort_values`](https://pandas.pydata.org/docs/referen
 books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']
 ```
 
-<img class="centered" src="../../static/img/blog/books/books_reranked.png"/>
+<img class="centered" src="/images/blog/books/books_reranked.png"/>
 
 
 Let's call it a plan and start reading ;)
