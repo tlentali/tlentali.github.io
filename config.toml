@@ -1,6 +1,6 @@
 baseURL = 'http://example.org/'
 languageCode = 'en-us'
-title = '@tl'
+title = '@tlentali'
 
 theme = "hugo-coder"
 defaultcontentlanguage = "en"
@@ -13,11 +13,11 @@ disqusShortname = "yourdiscussshortname"
 style = "github-dark"
 
 [params]
-  author = "🚲"
+  author = "🪭"
   # info=["data scientist", "search engine optimizer", "money laundering fighter", "gambling addiction tracker", "Pringles eater."]
   description = "Thomas' personal website"
-  keywords = "blog,developer,personal"
-  avatarurl = "images/avatar.jpg"
+  keywords = "blog,data,personal"
+  # avatarurl = "images/avatar.jpg"
   gravatar = "thomas.lentali@gmail.com"
 
   faviconSVG = "/img/favicon.svg"
@@ -90,5 +90,5 @@ style = "github-dark"
   url  = "posts/"
 [[menu.main]]
   name = "About"
-  weight = 2
+  weight = 3
   url = "about/"
