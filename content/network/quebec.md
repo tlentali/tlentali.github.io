@@ -1,0 +1,1 @@
+{{< pdfReader "lentali_thomas_cv_quebec.pdf" >}}
