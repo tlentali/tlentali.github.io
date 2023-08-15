@@ -89,6 +89,10 @@ style = "github-dark"
   weight = 1
   url  = "posts/"
 [[menu.main]]
+  name = "Network"
+  weight = 2
+  url  = "network/"
+[[menu.main]]
   name = "About"
   weight = 3
   url = "about/"
