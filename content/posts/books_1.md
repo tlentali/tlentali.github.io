@@ -74,38 +74,37 @@ Here we build the url by inserting the isbn into it. The tqdm allow us to follow
 Then, we extract the json info into a Pandas DataFrame : 
 
 ```python 
+def return_on_failure(value):
+    def decorate(f):
+        def applicator(*args, **kwargs):
+            try:
+                return f(*args,**kwargs)
+            except:
+                return value
+        return applicator
+    return decorate
+
+@return_on_failure('')
 def get_title(books, book):
-    try:
-        return books[book]['items'][0]['volumeInfo']['title']
-    except:
-        return ''
+    return books[book]['items'][0]['volumeInfo']['title']
 
-def get_autor(books, book):
-    try:
-        return books[book]['items'][0]['volumeInfo']['authors']
-    except:
-        return ''
+@return_on_failure([])
+def get_author(books, book):
+    return books[book]['items'][0]['volumeInfo']['authors']
 
+@return_on_failure(0)
 def get_page_count(books, book):
-    try:
-        return books[book]['items'][0]['volumeInfo']['pageCount']
-    except:
-        return ''
-
+    return books[book]['items'][0]['volumeInfo']['pageCount']
+    
+@return_on_failure('')
 def get_language(books, book):
-    try:
-        return books[book]['items'][0]['volumeInfo']['language']
-    except:
-        return ''
-
+    return books[book]['items'][0]['volumeInfo']['language']
+    
+@return_on_failure([])
 def get_categorie(books, book):
-    try:
         return books[book]['items'][0]['volumeInfo']['categories']
-    except:
-        return ''
 
 df = {}
-        
 for book in isbn:
     df[book] = {}
     df[book]['title'] = get_title(books, book)
@@ -113,12 +112,13 @@ for book in isbn:
     df[book]['page_count'] = get_page_count(books, book)
     df[book]['language'] = get_language(books, book)
     df[book]['categories'] = get_categorie(books, book)
-    
 
 df_result = pd.DataFrame.from_dict(df).T
 df_result = df_result.rename_axis('isbn').reset_index()
-df_result
+df_result = df_result[['isbn', 'title', 'authors', 'page_count', 'language', 'categories']]
 ```
+
+We used a decorator function to control missing data. 
 
 Output : 
 
