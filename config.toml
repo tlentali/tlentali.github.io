@@ -10,7 +10,7 @@ paginate = 20
 disqusShortname = "yourdiscussshortname"
 
 [markup.highlight]
-style = "github-dark"
+style = "monokai"
 
 [params]
   author = "🪭"
@@ -89,9 +89,9 @@ style = "github-dark"
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "Network"
+  name = "resume"
   weight = 2
-  url  = "network/"
+  url  = "resume/"
 [[menu.main]]
   name = "About"
   weight = 3
