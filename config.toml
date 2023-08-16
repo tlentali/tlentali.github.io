@@ -24,7 +24,7 @@ style = "monokai"
   favicon_32 = "/img/favicon-32x32.png"
   favicon_16 = "/img/favicon-16x16.png"
 
-  since = 2019
+  since = 2022
 
   enableTwemoji = true
 
@@ -89,10 +89,13 @@ style = "monokai"
   weight = 1
   url  = "posts/"
 [[menu.main]]
-  name = "resume"
+  name = "Resume"
   weight = 2
   url  = "resume/"
 [[menu.main]]
   name = "About"
   weight = 3
   url = "about/"
+
+[markup.goldmark.renderer]
+  unsafe = true
