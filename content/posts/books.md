@@ -57,7 +57,7 @@ books['rank'] = books['pages'].rank(method='first')
 
 <div align="center" >
 <figure>
-    <img style="box-shadow: none;" src="https://raw.githubusercontent.com/tlentali/tlentali.github.io/master/static/images/blog/books/books_rank.png">
+    <img style="box-shadow: none;" src="/images/blog/books/books_rank.png">
 </figure>
 </div>
 
@@ -76,7 +76,7 @@ Reordering the list using [`sort_values`](https://pandas.pydata.org/docs/referen
 books.sort_values(by=['reading_rank','rank'], ascending=False)['pages']
 ```
 
-<img class="centered" src="https://raw.githubusercontent.com/tlentali/tlentali.github.io/master/static/images/blog/books/books_reranked.png"/>
+<img class="centered" src="/images/blog/books/books_reranked.png"/>
 
 
-Let's call it a plan and start reading ;)
+Let's call it a plan and start reading 📖
