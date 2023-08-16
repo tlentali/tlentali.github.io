@@ -1,14 +1,14 @@
 +++ 
 draft = false
 date = 2022-08-15T18:33:12+02:00
-title = "Books I"
+title = "Books"
 description = "Know your books."
 slug = ""
 authors = []
 tags = []
 categories = []
 externalLink = ""
-series = []
+series = ['Books']
 +++
 
 Did you ever wonder how many book surround you ?  
@@ -74,28 +74,46 @@ Here we build the url by inserting the isbn into it. The tqdm allow us to follow
 Then, we extract the json info into a Pandas DataFrame : 
 
 ```python 
+def get_title(books, book):
+    try:
+        return books[book]['items'][0]['volumeInfo']['title']
+    except:
+        return ''
+
+def get_autor(books, book):
+    try:
+        return books[book]['items'][0]['volumeInfo']['authors']
+    except:
+        return ''
+
+def get_page_count(books, book):
+    try:
+        return books[book]['items'][0]['volumeInfo']['pageCount']
+    except:
+        return ''
+
+def get_language(books, book):
+    try:
+        return books[book]['items'][0]['volumeInfo']['language']
+    except:
+        return ''
+
+def get_categorie(books, book):
+    try:
+        return books[book]['items'][0]['volumeInfo']['categories']
+    except:
+        return ''
+
+df = {}
+        
 for book in isbn:
     df[book] = {}
-    try:
-        df[book]['title'] = books[book]['items'][0]['volumeInfo']['title']
-    except:
-        df[book]['title'] = ''
-    try:
-        df[book]['authors'] = books[book]['items'][0]['volumeInfo']['authors']
-    except:
-        df[book]['authors'] = ''
-    try:
-        df[book]['page_count'] = books[book]['items'][0]['volumeInfo']['pageCount']
-    except:
-        df[book]['page_count'] = 0
-    try:
-        df[book]['language'] = books[book]['items'][0]['volumeInfo']['language']
-    except:
-        df[book]['language'] = ''
-    try:
-        df[book]['categories'] = books[book]['items'][0]['volumeInfo']['categories']
-    except:
-        df[book]['categories'] = ''
+    df[book]['title'] = get_title(books, book)
+    df[book]['authors'] = get_author(books, book)
+    df[book]['page_count'] = get_page_count(books, book)
+    df[book]['language'] = get_language(books, book)
+    df[book]['categories'] = get_categorie(books, book)
+    
 
 df_result = pd.DataFrame.from_dict(df).T
 df_result = df_result.rename_axis('isbn').reset_index()
