@@ -13,7 +13,7 @@ disqusShortname = "yourdiscussshortname"
 style = "monokai"
 
 [params]
-  author = "🪭"
+  author = ""
   # info=["data scientist", "search engine optimizer", "money laundering fighter", "gambling addiction tracker", "Pringles eater."]
   description = "Thomas' personal website"
   keywords = "blog,data,personal"
