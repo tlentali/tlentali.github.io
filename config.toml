@@ -54,7 +54,7 @@ style = "monokai"
   url = "https://stackoverflow.com/users/8479387/tlentali"
 [[params.social]]
   name = "Kaggle"
-  image = "images/social/kaggle2.svg"
+  icon = "fa fa-trophy fa-2x"
   weight = 3
   url = "https://www.kaggle.com/tlentali"
 [[params.social]]
