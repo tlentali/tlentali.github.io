@@ -84,10 +84,10 @@ style = "monokai"
   url = "https://twitter.com/tlentali/"
 
 # Menu links
-[[menu.main]]
-  name = "Blog"
-  weight = 1
-  url  = "posts/"
+# [[menu.main]]
+#   name = "Blog"
+#   weight = 1
+#   url  = "posts/"
 [[menu.main]]
   name = "Resume"
   weight = 2
