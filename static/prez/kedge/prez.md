@@ -5,45 +5,16 @@ thomas.lentali@gmail.com
 
 ---
 
-Smartphone ?
+Netflix, Amazon Prime, Disney+, Tiktok, Spotify, Deezer, Cdiscount, Betclic, Google, Bing, Qwant, DuckDuckGo, Airbnb, Apple, Facebook, Instagram, Uber, Deliveroo, ChatGPT
 
-<p class="fragment" data-fragment-index="1">Image detection.</p>
+...
 
----
-
-Netflix, Amazon Prime, Disney+, CBO, Spotify, Deezer?
-
-<p class="fragment" data-fragment-index="1">Recommendation.</p>
+<p class="fragment" data-fragment-index="1">Nous utilisons de l'IA.</p>
+<p class="fragment" data-fragment-index="2">Nous renforçons ces IA.</p>
 
 ---
 
-Amazon, Cdiscount, Betclic?
-
-<p class="fragment" data-fragment-index="3">Personnalisation.</p>
-
----
-
-Google, Bing, Qwant, DuckDuckGo, Facebook, Insta, Uber, deliveroo?
-
-<p class="fragment" data-fragment-index="4">Classifiaction, clustering.</p>
-
----
-
-ChatGPT ?
-
-<p class="fragment" data-fragment-index="5">Natural langage processing.</p>
-
----
-
-Tu utilises de l'IA.
-
----
-
-Tu es utilisé pour renforcer ces IA.
-
----
-
-![](misc/tradi.png)
+![](misc/ml_vs_traditional_paradigm.png)
 
 ---
 
@@ -51,11 +22,11 @@ Tu es utilisé pour renforcer ces IA.
 
 <img src="misc/ibm.jpg" width="75%">
 
-Traditional computing
+Traditional programming
 
 ---
 
-![](misc/ml.png)
+![](misc/tradi.png)
 
 ---
 
@@ -67,74 +38,166 @@ Machine learning
 
 ---
 
-![](misc/ml_vs_traditional_paradigm.png)
+![](misc/ml.png)
 
 ---
 
-Comment ca marche ?
+La différence en 20 ans ?
+
+<p class="fragment" data-fragment-index="1">Big Data.</p>
 
 ---
 
-modelisation
+Comment ça marche ?
 
 ---
 
 <img src="misc/housing.png" width="50%">
 
 ---
+<!-- .slide: data-transition="fade" -->
 
 <img src="misc/housing_regression.png" width="50%">
 
 ---
+<!-- .slide: data-transition="fade" -->
 
 <img src="misc/housing_regression_alone.png" width="50%">
 
 ---
 
-clustering
-
-<img src="misc/clustering.png" width="50%">
+<img src="misc/training.png" width="100%">
 
 ---
 
-<img src="misc/clustering.gif" width="50%">
+<img src="misc/predict.png" width="100%">
 
 ---
 
-prediction du futur
+Clustering
 
-<img src="misc/time_serie.png" width="50%">
+---
+<!-- .slide: data-transition="fade" -->
 
+<img src="misc/frame-01.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-02.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-03.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-04.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-05.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-06.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-07.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-08.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-09.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-10.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-11.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-12.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-13.gif" width="50%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/frame-14.gif" width="50%">
 
 ---
 
-classification
+Classification
 
-<img src="misc/spam.jpg" width="75%">
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/classif_1.gif" width="75%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/classif_2.gif" width="75%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/classif_3.gif" width="75%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/classif_4.gif" width="75%">
+
+---
+<!-- .slide: data-transition="fade" -->
+
+<img src="misc/classif_5.gif" width="75%">
 
 ---
 
-recommendation
-
-<img src="misc/netflix.png" width="75%">
+Recommendation
 
 ---
 
-natural langage processing (google trad, ChatGPT)
+<img src="misc/reco.png" width="75%">
 
-![](misc/sentiment_analysis.png)
+----
 
+Target detecte une femme enceinte via recommandation de produit
+
+[[Source](https://www.forbes.com/sites/kashmirhill/2012/02/16/how-target-figured-out-a-teen-girl-was-pregnant-before-her-father-did/)]
 
 ---
 
-image detection (yolov3)
+Deep learning (yolov3)
 
 <img src="misc/yolov3.gif" width="75%">
 
-
 ---
 
-Ethique
+Problème d'explicativité
 
 ---
 
@@ -144,10 +207,26 @@ Ethique
 
 ![](misc/snow.png)
 
-Un loup est un chien dans la neige.
-
 ---
 
-- detection de femme enceinte via recommandation de produit
+Identifier les thèmes éthiques.
+
+----
+
 - le 07 qui t'empeche d'avoir un credit
-- le chatbot de Microsoft est raciste
+
+----
+
+<img src="misc/muffin.png" width="75%">
+
+----
+
+- Biais de données 
+- Biais de représentation 
+- Biais de confirmation 
+- Biais de sélection d'échantillon
+- Biais d'étiquetage
+- Biais cognitif
+- Biais socioculturels
+- Biais de classe
+- Biais de rétroaction en boucle
