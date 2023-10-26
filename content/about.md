@@ -9,4 +9,4 @@ My educational background is in applied mathematics 🧮, with a Master's degree
 
 Programming is a passion of mine, and I actively participate in [open-source](https://github.com/tlentali) projects ⚙️. I'm proud to have earned the [Kaggle competitions Expert](https://www.kaggle.com/tlentali) trophy 🏆 and enjoy competitive data science. I also enjoy helping my peers on [Stackoverflow](https://stackoverflow.com/users/8479387/tlentali) 🤝 and [teaching](https://kedge.edu/) AI & Ethics 🧑‍🏫 at Kedge Business School Bordeaux.
 
-On my free time, you can find me motorcycling 🏍️, soldering things 👨‍🏭, surfing 🏄‍♂️, and reviewing all the restaurants in Bordeaux 🍽️.
+On my free time, you can find me motorcycling 🏍️, soldering things 👨‍🏭, surfing 🏄‍♂️, and reviewing restaurants in Bordeaux 🍽️.
