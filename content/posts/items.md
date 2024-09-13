@@ -1,14 +1,14 @@
 +++ 
 draft = false
-date = 2022-08-15T18:33:12+02:00
-title = "Books"
-description = "Know your books."
+date = 2024-09-13T18:33:12+02:00
+title = "Items"
+description = "Baby I got it."
 slug = ""
 authors = []
 tags = []
 categories = []
 externalLink = ""
-series = ['Books']
+series = ['Items']
 +++
 
 L'argent recolté servira à nous payer un [Hummer H1](https://fr.wikipedia.org/wiki/Hummer_H1#/media/Fichier:Hummer_H1_Alpha_Wagon.jpg).
