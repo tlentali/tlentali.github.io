@@ -16,10 +16,9 @@ L'argent recolté servira à nous payer un [Hummer H1](https://fr.wikipedia.org/
 | name | pics | price |
 | ---- | ---- | ----- |
 | miroir à bijoux | ![](https://tlentali.com/images/blog/items/IMG_0357.JPEG) | 35€ |
-| steamer | ![](https://tlentali.com/images/blog/items/IMG_0358.JPEG) | 40€ |
+| steamer | ![](https://tlentali.com/images/blog/items/IMG_0358.JPEG) | 60€ |
 | extracteur de jus | ![](https://tlentali.com/images/blog/items/IMG_0359.JPEG) | 40€ |
-| ventillateur noir | ![](https://tlentali.com/images/blog/items/IMG_0360.JPEG) | free |
-| ventillateur metal | ![](https://tlentali.com/images/blog/items/IMG_0361.JPEG) | free |
+| ventillateur | ![](https://tlentali.com/images/blog/items/IMG_0361.JPEG) | free |
 | presentoir à gâteau | ![](https://tlentali.com/images/blog/items/IMG_0363.JPEG) | 3€ |
 | corbeille à fruit en bois | ![](https://tlentali.com/images/blog/items/IMG_0364.JPEG) | free |
 | 3 bougeoires en fonte | ![](https://tlentali.com/images/blog/items/IMG_0365.JPEG) | 40€ |
@@ -37,7 +36,6 @@ L'argent recolté servira à nous payer un [Hummer H1](https://fr.wikipedia.org/
 | lampe ikea sympa (x2) | ![](https://tlentali.com/images/blog/items/IMG_0380.JPEG) | 4€ |
 | diffuseur d'huile (absolument jamais servie de mon experience quoi qu'en dise Pascaline) | ![](https://tlentali.com/images/blog/items/IMG_0381.JPEG) | 4€ |
 | lot pour arroser l'aloé | ![](https://tlentali.com/images/blog/items/IMG_0382.JPEG) | 4€ |
-| zafu yoga kapok (si si) | ![](https://tlentali.com/images/blog/items/IMG_0383.JPEG) | 2€ |
 | le combo gagnant pour resoudre n'importe quel probleme | ![](https://tlentali.com/images/blog/items/IMG_0384.JPEG) | free |
 | malle en cuir qui a vecu (déco) | ![](https://tlentali.com/images/blog/items/IMG_0385.JPEG) | 2€ |
 | la naissance d'une fascination | ![](https://tlentali.com/images/blog/items/IMG_0387.JPEG) | free |
