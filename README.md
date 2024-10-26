@@ -33,6 +33,7 @@
 - https://samsongoddy.com/
 - https://sonyamoisset.github.io/
 - https://tyrrrz.me/
+- https://sno.ws/digital-things/
 
 ## Show off like
 
@@ -45,6 +46,7 @@
 
 - [Gabriel Saillard](https://gaby.dev/)
 - [mrusme](https://マリウス.com/)
+- [Cassidy Williams](https://cassidoo.co/tag/learning/)
 
 ## Calm like 
 
