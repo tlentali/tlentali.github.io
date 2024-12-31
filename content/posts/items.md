@@ -17,11 +17,9 @@ L'argent recolté servira à nous payer un [Hummer H1](https://fr.wikipedia.org/
 
 | name | pics | price |
 | ---- | ---- | ----- |
-| miroir à bijoux | ![](https://tlentali.com/images/blog/items/IMG_0357.JPEG) | 35€ |
 | steamer | ![](https://tlentali.com/images/blog/items/IMG_0358.JPEG) | 60€ |
 | extracteur de jus | ![](https://tlentali.com/images/blog/items/IMG_0359.JPEG) | 40€ |
 | ventillateur | ![](https://tlentali.com/images/blog/items/IMG_0361.JPEG) | free |
-| presentoir à gâteau | ![](https://tlentali.com/images/blog/items/IMG_0363.JPEG) | 3€ |
 | corbeille à fruit en bois | ![](https://tlentali.com/images/blog/items/IMG_0364.JPEG) | free |
 | 3 bougeoires en fonte | ![](https://tlentali.com/images/blog/items/IMG_0365.JPEG) | 2€ |
 | Blame it on the boogie (bougies electriques) | ![](https://tlentali.com/images/blog/items/IMG_0366.JPEG) | Jackson free |
@@ -41,5 +39,5 @@ L'argent recolté servira à nous payer un [Hummer H1](https://fr.wikipedia.org/
 | scie | ![](https://tlentali.com/images/blog/items/IMG_0439.jpg) | 0.66€ |
 | scie-sauteuse Bosch PST 800 PEL | ![](https://tlentali.com/images/blog/items/IMG_0440.jpg) | 20€ |
 | perceuse Bosch PSB 750 RCE | ![](https://tlentali.com/images/blog/items/IMG_0441.jpg) | 20€ |
-| boite à out's 2 Ikea | ![](https://tlentali.com/images/blog/items/IMG_0442.jpg) | 1€ |
-| balace stylée | ![](https://tlentali.com/images/blog/items/IMG_0443.jpg) | 5€ |
+| boite à out's 2 Ikea | ![](https://tlentali.com/images/blog/items/IMG_0442.jpg) | free |
+| balance stylée | ![](https://tlentali.com/images/blog/items/IMG_0443.jpg) | 5€ |
