@@ -88,10 +88,10 @@ style = "monokai"
 #   name = "Blog"
 #   weight = 1
 #   url  = "posts/"
-[[menu.main]]
-  name = "Resume"
-  weight = 2
-  url  = "resume/"
+# [[menu.main]]
+#  name = "Resume"
+#  weight = 2
+#  url  = "resume/"
 [[menu.main]]
   name = "About"
   weight = 3
