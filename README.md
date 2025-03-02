@@ -34,6 +34,7 @@
 - https://sonyamoisset.github.io/
 - https://tyrrrz.me/
 - https://sno.ws/digital-things/
+- https://taylor.town/
 
 ## Show off like
 
