@@ -1,3 +1,16 @@
++++ 
+draft = false
+date = 2022-08-15T18:33:12+02:00
+title = "Links"
+description = "Know your links."
+slug = ""
+authors = []
+tags = []
+categories = []
+externalLink = ""
+series = ['life']
++++
+
 - [ChatGPT](https://chatgpt.com/)
 - [Gmail](https://mail.google.com/mail/u/0/#inbox)
 - [Cal](https://calendar.google.com/calendar?authuser=0)
