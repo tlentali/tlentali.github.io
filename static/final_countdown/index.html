@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown Timer</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExdHYwYXNnZmUzNHMzOHdjYjN1MjNwMmIwdHp4a3hzb3Qxa3lpMGtuNiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/LqrYtyAydv2Io7UXgO/giphy.gif') no-repeat center center/cover;
+            color: white;
+        }
+        .countdown {
+            font-size: 2em;
+            background: rgb(0, 61, 165);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="countdown" id="countdown"></div>
+
+    <script>
+        function startCountdown(targetDate) {
+            function updateCountdown() {
+                const now = new Date().getTime();
+                const distance = targetDate - now;
+
+                if (distance < 0) {
+                    document.getElementById("countdown").innerHTML = "Countdown expired!";
+                    clearInterval(interval);
+                    return;
+                }
+
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("countdown").innerHTML =
+                    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+            }
+
+            updateCountdown();
+            const interval = setInterval(updateCountdown, 1000);
+        }
+
+        // Set the target date (YYYY, MM (0-based), DD, HH, MM, SS)
+        const targetDate = new Date(2025, 2, 11, 14, 0, 0).getTime(); // Example: June 1, 2025, 12:00 PM
+        startCountdown(targetDate);
+    </script>
+</body>
+</html>
