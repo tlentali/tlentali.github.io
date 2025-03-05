@@ -24,6 +24,13 @@ series = ['life']
 - [Reddit](https://www.reddit.com/)
 - [x](https://x.com/)
 
+# Data
+
+- [Github](https://github.com/)
+- [Gist](https://gist.github.com/tlentali)
+- [Stackoverflow](https://stackoverflow.com/questions/tagged?uqlId=67721)
+- [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=1)
+
 # Media
 
 - [Netflix](https://www.netflix.com/)
