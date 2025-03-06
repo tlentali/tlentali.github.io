@@ -18,11 +18,12 @@ series = ['life']
 - [Cal](https://calendar.google.com/calendar?authuser=0)
 - Trad : [Fr -> En](https://translate.google.ca/?sl=fr&tl=en&op=translate) --- [En -> Fr](https://translate.google.com/?hl=fr&sl=en&tl=fr&op=translate)
 - [WhatsApp](https://web.whatsapp.com/)
+- [notion](https://www.notion.so/)
 
 # News
 
 - [Reddit](https://www.reddit.com/)
-- [x](https://x.com/)
+- [Twitter](https://x.com/)
 
 # Data
 
@@ -37,6 +38,12 @@ series = ['life']
 - [Disneyplus](https://www.disneyplus.com/)
 - [Prime](https://www.primevideo.com/)
 - [Youtube](https://www.youtube.com/feed/subscriptions)
+
+# Meetup Montréal
+
+- [Python](https://www.meetup.com/montreal-python/)
+- [Linux](https://agendadulibre.qc.ca/)
+- [Acams](https://www.acams.org/en/chapters/canada/montreal-chapter#events-fac13fa9)
 
 # Blogs
 
