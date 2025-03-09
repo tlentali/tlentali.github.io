@@ -52,7 +52,7 @@
         }
 
         // Set the target date (YYYY, MM (0-based), DD, HH, MM, SS)
-        const targetDate = new Date(2025, 2, 11, 14, 0, 0).getTime(); // Example: June 1, 2025, 12:00 PM
+        const targetDate = new Date.UTC(2025, 2, 11, 10, 0, 0).getTime(); // Example: June 1, 2025, 12:00 PM
         startCountdown(targetDate);
     </script>
 </body>
