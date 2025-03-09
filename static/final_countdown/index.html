@@ -27,33 +27,34 @@
     <div class="countdown" id="countdown"></div>
 
     <script>
-        function startCountdown(targetDate) {
-            function updateCountdown() {
-                const now = new Date().getTime();
-                const distance = targetDate - now;
+            function startCountdown(targetDateUTC) {
+                function updateCountdown() {
+                    const nowUTC = new Date().toISOString();
+                    const now = new Date(nowUTC).getTime();
+                    const distance = targetDateUTC - now;
 
-                if (distance < 0) {
-                    document.getElementById("countdown").innerHTML = "Countdown expired!";
-                    clearInterval(interval);
-                    return;
+                    if (distance < 0) {
+                        document.getElementById("countdown").innerHTML = "Countdown expired!";
+                        clearInterval(interval);
+                        return;
+                    }
+
+                    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                    document.getElementById("countdown").innerHTML =
+                        `${days}d ${hours}h ${minutes}m ${seconds}s`;
                 }
 
-                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-                document.getElementById("countdown").innerHTML =
-                    `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                updateCountdown();
+                const interval = setInterval(updateCountdown, 1000);
             }
 
-            updateCountdown();
-            const interval = setInterval(updateCountdown, 1000);
-        }
-
-        // Set the target date (YYYY, MM (0-based), DD, HH, MM, SS)
-        const targetDate = new Date.UTC(2025, 2, 11, 10, 0, 0).getTime(); // Example: June 1, 2025, 12:00 PM
-        startCountdown(targetDate);
+            // Set the UTC target date directly using Date.UTC (YYYY, MM, DD, HH, MM, SS)
+            const targetDateUTC = Date.UTC(2025, 2, 11, 10, 0, 0); // June 1, 2025, 12:00:00 UTC
+            startCountdown(targetDateUTC);
     </script>
 </body>
 </html>
