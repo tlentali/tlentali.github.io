@@ -11,39 +11,15 @@ externalLink = ""
 series = ['life']
 +++
 
-# Orga
-
-- [ChatGPT](https://chatgpt.com/)
-- [Gmail](https://mail.google.com/mail/u/0/#inbox)
-- [Cal](https://calendar.google.com/calendar?authuser=0)
-- Trad : [Fr -> En](https://translate.google.ca/?sl=fr&tl=en&op=translate) --- [En -> Fr](https://translate.google.com/?hl=fr&sl=en&tl=fr&op=translate)
-- [WhatsApp](https://web.whatsapp.com/)
-- [notion](https://www.notion.so/)
-
-# News
-
-- [Reddit](https://www.reddit.com/)
-- [Twitter](https://x.com/)
-
-# Data
-
-- [Github](https://github.com/)
-- [Gist](https://gist.github.com/tlentali)
-- [Stackoverflow](https://stackoverflow.com/questions/tagged?uqlId=67721)
-- [Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=1)
-
-# Media
-
-- [Netflix](https://www.netflix.com/)
-- [Disneyplus](https://www.disneyplus.com/)
-- [Prime](https://www.primevideo.com/)
-- [Youtube](https://www.youtube.com/feed/subscriptions)
-
-# Meetup Montréal
-
-- [Python](https://www.meetup.com/montreal-python/)
-- [Linux](https://agendadulibre.qc.ca/)
-- [Acams](https://www.acams.org/en/chapters/canada/montreal-chapter#events-fac13fa9)
+| Orga                                                               | News                                | Data                                                                      | Media                                                   | Meetup                                                                               |
+| ------------------------------------------------------------------ | ----------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| [🐱‍💻 ChatGPT](https://chatgpt.com/)                                  | [📰 Reddit](https://www.reddit.com/) | [💻 Github](https://github.com/)                                           | [📺 Netflix](https://www.netflix.com/)                   | [🤝 Python](https://www.meetup.com/montreal-python/)                                  |
+| [✉️ Gmail](https://mail.google.com/mail/u/0/#inbox)                 | [👀 Twitter](https://x.com/)         | [💻 Gist](https://gist.github.com/tlentali)                                | [📺 Disneyplus](https://www.disneyplus.com/)             | [🤝 Linux](https://agendadulibre.qc.ca/)                                              |
+| [📅 Cal](https://calendar.google.com/calendar?authuser=0)           |                                     | [💻 Stackoverflow](https://stackoverflow.com/questions/tagged?uqlId=67721) | [📺 Prime](https://www.primevideo.com/)                  | [🤝 Acams](https://www.acams.org/en/chapters/canada/montreal-chapter#events-fac13fa9) |
+| [🇫🇷🇺🇸](https://translate.google.ca/?sl=fr&tl=en&op=translate)        |                                     | [🏆 Kaggle](https://www.kaggle.com/competitions?hostSegmentIdFilter=1)     | [📺 Youtube](https://www.youtube.com/feed/subscriptions) |                                                                                      |
+| [🇺🇸🇫🇷](https://translate.google.com/?hl=fr&sl=en&tl=fr&op=translate) |                                     |                                                                           |                                                         |                                                                                      |
+| [📞 WhatsApp](https://web.whatsapp.com/)                            |                                     |                                                                           |                                                         |                                                                                      |
+| [⌨️ Notion](https://www.notion.so/)                                 |                                     |                                                                           |                                                         |                                                                                      |
 
 # Blogs
 
