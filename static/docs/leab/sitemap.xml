@@ -1,3 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://tlentali.com/docs/pycht/</loc>
+         <lastmod>2025-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://tlentali.com/docs/pycht/getting-started/</loc>
+         <lastmod>2025-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://tlentali.com/docs/pycht/reference/clustering/</loc>
+         <lastmod>2025-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://tlentali.com/docs/pycht/reference/image_processing/</loc>
+         <lastmod>2025-03-28</lastmod>
+    </url>
+    <url>
+         <loc>https://tlentali.com/docs/pycht/reference/pycht/</loc>
+         <lastmod>2025-03-28</lastmod>
+    </url>
 </urlset>
