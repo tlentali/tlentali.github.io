@@ -573,8 +573,7 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
 
               <details class="quote">
                 <summary>Source code in <code>pycht/pycht.py</code></summary>
-                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 8</span>
-<span class="normal"> 9</span>
+                <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 9</span>
 <span class="normal">10</span>
 <span class="normal">11</span>
 <span class="normal">12</span>
@@ -607,7 +606,8 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
 <span class="normal">39</span>
 <span class="normal">40</span>
 <span class="normal">41</span>
-<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Pycht</span><span class="p">:</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">class</span><span class="w"> </span><span class="nc">Pycht</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Main interface for generating color-separated stencils from an input image.</span>
 
@@ -619,7 +619,7 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
         <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span> <span class="o">=</span> <span class="n">ImageProcessing</span><span class="p">()</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">clustering</span> <span class="o">=</span> <span class="n">Clustering</span><span class="p">()</span>
 
-    <span class="k">def</span><span class="w"> </span><span class="nf">stencil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">nb_colors</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+    <span class="k">def</span><span class="w"> </span><span class="nf">stencil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_img</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">nb_colors</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;./&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">        Generate color stencils from an input image using K-Means clustering.</span>
 
@@ -628,7 +628,7 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
 
 <span class="sd">        Parameters</span>
 <span class="sd">        ----------</span>
-<span class="sd">        input_path : str</span>
+<span class="sd">        input_img : str</span>
 <span class="sd">            Path to the input image file.</span>
 <span class="sd">        output_path : str</span>
 <span class="sd">            Path to save the final clustered image.</span>
@@ -637,9 +637,9 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
 <span class="sd">        &quot;&quot;&quot;</span>
         <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span><span class="o">.</span><span class="n">color_separation</span><span class="p">(</span>
             <span class="bp">self</span><span class="o">.</span><span class="n">clustering</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span>
-                <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">input_path</span><span class="p">),</span> <span class="n">nb_colors</span>
+                <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">input_img</span><span class="p">),</span> <span class="n">nb_colors</span>
             <span class="p">),</span>
-            <span class="n">input_path</span><span class="p">,</span>
+            <span class="n">input_img</span><span class="p">,</span>
             <span class="n">output_path</span><span class="p">,</span>
         <span class="p">)</span>
 </code></pre></div></td></tr></table></div>
@@ -661,7 +661,7 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
 
 
 <h3 id="pycht.pycht.Pycht.stencil" class="doc doc-heading">
-            <code class="highlight language-python"><span class="n">stencil</span><span class="p">(</span><span class="n">input_path</span><span class="p">,</span> <span class="n">output_path</span><span class="p">,</span> <span class="n">nb_colors</span><span class="p">)</span></code>
+            <code class="highlight language-python"><span class="n">stencil</span><span class="p">(</span><span class="n">input_img</span><span class="p">,</span> <span class="n">nb_colors</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">output_path</span><span class="o">=</span><span class="s1">&#39;./&#39;</span><span class="p">)</span></code>
 
 </h3>
 
@@ -672,7 +672,7 @@ using the <code>ImageProcessing</code> and <code>Clustering</code> components.</
 <p>This method reads the image, clusters its colors, and saves each cluster
 as a separate transparent stencil image.</p>
 <h5 id="pycht.pycht.Pycht.stencil--parameters">Parameters</h5>
-<p>input_path : str
+<p>input_img : str
     Path to the input image file.
 output_path : str
     Path to save the final clustered image.
@@ -682,8 +682,7 @@ nb_colors : int
 
             <details class="quote">
               <summary>Source code in <code>pycht/pycht.py</code></summary>
-              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">20</span>
-<span class="normal">21</span>
+              <div class="highlight"><table class="highlighttable"><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">21</span>
 <span class="normal">22</span>
 <span class="normal">23</span>
 <span class="normal">24</span>
@@ -704,7 +703,8 @@ nb_colors : int
 <span class="normal">39</span>
 <span class="normal">40</span>
 <span class="normal">41</span>
-<span class="normal">42</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">stencil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">nb_colors</span><span class="p">:</span> <span class="nb">int</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
+<span class="normal">42</span>
+<span class="normal">43</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="k">def</span><span class="w"> </span><span class="nf">stencil</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">input_img</span><span class="p">:</span> <span class="nb">str</span><span class="p">,</span> <span class="n">nb_colors</span><span class="p">:</span> <span class="nb">int</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">output_path</span><span class="p">:</span> <span class="nb">str</span><span class="o">=</span><span class="s2">&quot;./&quot;</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kc">None</span><span class="p">:</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Generate color stencils from an input image using K-Means clustering.</span>
 
@@ -713,7 +713,7 @@ nb_colors : int
 
 <span class="sd">    Parameters</span>
 <span class="sd">    ----------</span>
-<span class="sd">    input_path : str</span>
+<span class="sd">    input_img : str</span>
 <span class="sd">        Path to the input image file.</span>
 <span class="sd">    output_path : str</span>
 <span class="sd">        Path to save the final clustered image.</span>
@@ -722,9 +722,9 @@ nb_colors : int
 <span class="sd">    &quot;&quot;&quot;</span>
     <span class="k">return</span> <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span><span class="o">.</span><span class="n">color_separation</span><span class="p">(</span>
         <span class="bp">self</span><span class="o">.</span><span class="n">clustering</span><span class="o">.</span><span class="n">compute</span><span class="p">(</span>
-            <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">input_path</span><span class="p">),</span> <span class="n">nb_colors</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">image_processing</span><span class="o">.</span><span class="n">process</span><span class="p">(</span><span class="n">input_img</span><span class="p">),</span> <span class="n">nb_colors</span>
         <span class="p">),</span>
-        <span class="n">input_path</span><span class="p">,</span>
+        <span class="n">input_img</span><span class="p">,</span>
         <span class="n">output_path</span><span class="p">,</span>
     <span class="p">)</span>
 </code></pre></div></td></tr></table></div>

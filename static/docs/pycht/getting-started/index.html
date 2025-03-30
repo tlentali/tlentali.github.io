@@ -584,18 +584,18 @@ pip install -r requirements.txt
 <pre><code class="language-python">from pycht import Pycht
 
 p = Pycht()
-p.stencil(&quot;images/input.jpg&quot;, &quot;images/output.png&quot;, nb_colors=4)
+p.stencil(&quot;images/input.jpg&quot;, nb_colors=4, output_path=&quot;output/&quot;)
 </code></pre>
 <p>This will:
 - Load <code>input.jpg</code>
 - Cluster its colors into 4 dominant tones
 - Save:
-  - <code>output.png</code>: the final image with clustered colors
+  - <code>output/</code>: the final image with clustered colors
   - <code>stencil_1.png</code>, <code>stencil_2.png</code>, ...: one per color, with transparency</p>
 <hr />
 <h2 id="parameters">⚙️ Parameters</h2>
 <ul>
-<li><code>input_path</code> (str): Path to the original image.</li>
+<li><code>input_img</code> (str): Path to the original image.</li>
 <li><code>output_path</code> (str): Path to save the clustered version of the image.</li>
 <li><code>nb_colors</code> (int): Number of color clusters (stencils) to generate.</li>
 </ul>
