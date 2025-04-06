@@ -29,3 +29,4 @@ series = ['life']
 - [paulgraham](https://paulgraham.com/articles.html)
 - [sno.ws](https://sno.ws/digital-things/)
 - [cgnorthcutt](https://stackoverflow.com/users/3638768/)
+- [calmcode.io](https://calmcode.io/)

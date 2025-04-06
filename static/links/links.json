@@ -1,0 +1,127 @@
+{
+    "openai": {
+        "url": "https://chatgpt.com/",
+        "image": "openai.jpg",
+        "ẗype": "orga"
+    },
+    "reddit": {
+        "url": "https://www.reddit.com/",
+        "image": "reddit.png",
+        "ẗype": "news"
+    },
+    "github": {
+        "url": "https://github.com/",
+        "image": "github.png",
+        "ẗype": "code"
+    },
+    "netflix": {
+        "url": "https://www.netflix.com/",
+        "image": "netflix.png",
+        "ẗype": "media"
+    },
+    "gmail": {
+        "url": "https://mail.google.com/mail/u/0/#inbox",
+        "image": "gmail.png",
+        "ẗype": "orga"
+    },
+    "x": {
+        "url": "https://x.com/",
+        "image": "x.jpg",
+        "ẗype": "news"
+    },
+    "gist": {
+        "url": "https://gist.github.com/tlentali",
+        "image": "gist.png",
+        "ẗype": "code"
+    },
+    "disneyplus": {
+        "url": "https://www.disneyplus.com/",
+        "image": "disney.png",
+        "ẗype": "media"
+    },
+    "linux": {
+        "url": "https://agendadulibre.qc.ca/",
+        "image": "linux.png",
+        "ẗype": "code"
+    },
+    "calendar": {
+        "url": "https://calendar.google.com/calendar?authuser=0",
+        "image": "calendar.png",
+        "ẗype": "orga"
+    },
+    "stackoverflow": {
+        "url": "https://stackoverflow.com/questions/tagged?uqlId=67721",
+        "image": "stackoverflow.png",
+        "ẗype": "code"
+    },
+    "primevideo": {
+        "url": "https://www.primevideo.com/",
+        "image": "prime.jpg",
+        "ẗype": "media"
+    },
+    "trad_fr_eng": {
+        "url": "https://translate.google.ca/?sl=fr&tl=en&op=translate",
+        "image": "blog.png",
+        "ẗype": "orga"
+    },
+    "kaggle": {
+        "url": "https://www.kaggle.com/competitions?hostSegmentIdFilter=1",
+        "image": "kaggle.png",
+        "ẗype": "code"
+    },
+    "youtube": {
+        "url": "https://www.youtube.com/feed/subscriptions",
+        "image": "youtube.png",
+        "ẗype": "media"
+    },
+    "trad_eng_fr": {
+        "url": "https://translate.google.com/?hl=fr&sl=en&tl=fr&op=translate",
+        "image": "blog.png",
+        "ẗype": "orga"
+    },
+    "whatsapp": {
+        "url": "https://web.whatsapp.com/",
+        "image": "whatsapp.png",
+        "ẗype": "orga"
+    },
+    "notion": {
+        "url": "https://www.notion.so/",
+        "image": "notion.png",
+        "ẗype": "orga"
+    },
+    "ycombinator": {
+        "url": "https://news.ycombinator.com/",
+        "image": "ycombinator.png",
+        "ẗype": "code"
+    },
+    "maxhalford": {
+        "url": "https://maxhalford.github.io/",
+        "image": "blog.png",
+        "ẗype": "blog"
+    },
+    "jeremymaluf": {
+        "url": "https://jeremymaluf.com/onebag/",
+        "image": "blog.png",
+        "ẗype": "blog"
+    },
+    "paulgraham": {
+        "url": "https://paulgraham.com/articles.html",
+        "image": "blog.png",
+        "ẗype": "blog"
+    },
+    "digital-things": {
+        "url": "https://sno.ws/digital-things/",
+        "image": "blog.png",
+        "ẗype": "blog"
+    },
+    "cgnorthcutt": {
+        "url": "https://stackoverflow.com/users/3638768/",
+        "image": "blog.png",
+        "ẗype": "blog"
+    },
+    "calmcode.io": {
+        "url": "https://calmcode.io/",
+        "image": "calmcode.png",
+        "ẗype": "code"
+    }
+}
