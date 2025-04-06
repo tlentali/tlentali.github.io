@@ -61,7 +61,7 @@
     },
     "trad_fr_eng": {
         "url": "https://translate.google.ca/?sl=fr&tl=en&op=translate",
-        "image": "blog.png",
+        "image": "france.png",
         "ẗype": "orga"
     },
     "kaggle": {
@@ -76,7 +76,7 @@
     },
     "trad_eng_fr": {
         "url": "https://translate.google.com/?hl=fr&sl=en&tl=fr&op=translate",
-        "image": "blog.png",
+        "image": "uk.png",
         "ẗype": "orga"
     },
     "whatsapp": {
